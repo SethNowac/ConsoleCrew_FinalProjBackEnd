@@ -1,4 +1,5 @@
-const dbName = "game_organizer_db";
+const dbName = "user_db";
+const collectionName = "Users";
 
 // Include class that enables a connection to the mongoDB database
 const {MongoClient} = require("mongodb");
@@ -11,7 +12,7 @@ const { InvalidInputError } = require("./InvalidInputErrors");
 const validateUtils = require("./validateUtils");
 
 let client;
-let gameInfoCollection;
+let userCollection;
 
 const logger = require("../logger")
 
@@ -27,18 +28,18 @@ async function initialize(databaseName, reset, url) {
         db = client.db(databaseName);
         
         // Check to see if the collections exists for game information
-        gameCollectionCursor = await db.listCollections({ name: "GameInformation" });
+        gameCollectionCursor = await db.listCollections({ name: collectionName });
         gameCollectionArray = await gameCollectionCursor.toArray();
         if (gameCollectionArray.length == 0) {  
             // collation specifying case-insensitive collection
             const collation = { locale: "en", strength: 1 };
             // No match was found, so create new collection
-            await db.createCollection("GameInformation", { collation: collation });
+            await db.createCollection(collectionName, { collation: collation });
         }    
-        gameInfoCollection = db.collection("GameInformation"); // convenient access to collection
+        userCollection = db.collection(collectionName); // convenient access to collection
 
         if(reset) {
-            await gameInfoCollection.drop();
+            await userCollection.drop();
         }
 
     } catch (err) {
@@ -64,10 +65,10 @@ async function close() {
  * @returns An array with the list of items in the collection
  * @throws {DatabaseError} If the database could not be read from or if there is nothing in the database
  */
-async function getAllGameInformation() {
+async function getAllUsersInformation() {
     try{
         let resultArray;
-        result = await getGameInfoCollection().find();
+        result = await getUserCollection().find();
         resultArray = await result.toArray();
         if(resultArray.length == 0 || result == null) {
             logger.error("Get all game information error: There is currently nothing in the database to read!");
@@ -90,14 +91,14 @@ async function getAllGameInformation() {
  * @throws {DatabaseError} if there was an issue writing to the database. Generally should not happen
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
-async function addGameInformation(name, description) {
+async function addUserInformation(name, description) {
     if(!validateUtils.isValid(name,description)) {
         logger.error("Add game information error: name "+name+" or description "+description+" was not valid!");
         throw new InvalidInputError("Add game information error: name "+name+" or description "+description+" was not valid!");
     }
     else {
         try{
-            let result = (await getGameInfoCollection().insertOne({name: name, description: description}));
+            let result = (await getUserCollection().insertOne({name: name, description: description}));
 
             if(result.acknowledged) {
                 logger.info("Add game information: Successfully added " + name);
@@ -123,7 +124,7 @@ async function addGameInformation(name, description) {
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
-async function getGameInformationSingle(name) {
+async function getUserSingle(name) {
     if(!name) {
         logger.error("Get game information error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Get game information error: cannot pass in an empty parameter!");
@@ -131,7 +132,7 @@ async function getGameInformationSingle(name) {
     else {
         let result = null;
         try{
-            result = await getGameInfoCollection().findOne({name: name});
+            result = await getUserCollection().findOne({name: name});
             if(result == null) {
                 logger.error("Get game information error: name "+name+" was not found in database!");
                 throw new InvalidInputError("Get game information error: name "+name+" was not found in database!");
@@ -161,7 +162,7 @@ async function getGameInformationSingle(name) {
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
-async function getSingleGameById(id) {
+async function getSingleUserById(id) {
     if(!id) {
         logger.error("Get game information error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Get game information error: cannot pass in an empty parameter!");
@@ -169,7 +170,7 @@ async function getSingleGameById(id) {
     else {
         let result = null;
         try{
-            result = await getGameInfoCollection().findOne({_id: id});
+            result = await getUserCollection().findOne({_id: id});
             if(result == null) {
                 logger.error("Get game information error: id "+id+" was not found in database!");
                 throw new InvalidInputError("Get game information error: id "+id+" was not found in database!");
@@ -202,7 +203,7 @@ async function getSingleGameById(id) {
  * or if the old name parameter is empty
  * @throws {DatabaseError} If there was an issue updating the database
  */
-async function updateGameInformation(oldName, newName, newDescription) {
+async function updateUser(oldName, newName, newDescription) {
     if(!oldName) {
         logger.error("Update game information error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update game information error: cannot pass in an empty parameter!");
@@ -212,7 +213,7 @@ async function updateGameInformation(oldName, newName, newDescription) {
     }
     else {
         try{
-            let checkExists = await getGameInfoCollection().updateOne({name: oldName}, {$set: { name: newName, description: newDescription } });
+            let checkExists = await getUserCollection().updateOne({name: oldName}, {$set: { name: newName, description: newDescription } });
             if(checkExists.modifiedCount > 0) {
                 logger.info("Update game information: Successfully updated " + oldName);
                 return checkExists;
@@ -240,7 +241,7 @@ async function updateGameInformation(oldName, newName, newDescription) {
  * @throws {InvalidInputError} if an empty name parameter is passed in or if the name was not found in the database
  * @throws {DatabaseError} If there was an issue deleting the game from the database
  */
-async function deleteGameInformation(name) {
+async function deleteUser(name) {
     if(!name) {
         logger.error("Delete game information error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Delete game information error: cannot pass in an empty parameter!");
@@ -248,8 +249,8 @@ async function deleteGameInformation(name) {
     else {
         let checkExists = null;
         try{
-            checkExists = await getGameInformationSingle(name);
-            let result = (await getGameInfoCollection().deleteOne({name: name}));
+            checkExists = await getUserSingle(name);
+            let result = (await getUserCollection().deleteOne({name: name}));
             if(result.deletedCount > 0) {
                 logger.info("Delete game information: Successfully deleted " + name);
                 return true;
@@ -276,17 +277,17 @@ async function deleteGameInformation(name) {
  * @returns Game information collection
  * @throws {DatabaseError} If the collection could not be registered
  */
-function getGameInfoCollection() {
+function getUserCollection() {
     // Validates the collection by performing a null check
-    if(gameInfoCollection == null) {
+    if(userCollection == null) {
         logger.error("Error with connection to database: Unable to register collection!");
         throw new DatabaseError("Error with connection to database: Unable to register collection!");
     }
-    return gameInfoCollection;
+    return userCollection;
 }
 
 function getClient() {
     return client;
 }
 
-module.exports = {getClient,initialize,addGameInformation,getGameInformationSingle,getAllGameInformation,close,getGameInfoCollection,updateGameInformation,deleteGameInformation,getSingleGameById}
+module.exports = {getClient,initialize,addUserInformation,getUserSingle,getAllUsersInformation,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
