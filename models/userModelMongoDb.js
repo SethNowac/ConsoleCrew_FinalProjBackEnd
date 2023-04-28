@@ -71,15 +71,15 @@ async function getAllUsersInformation() {
         result = await getUserCollection().find();
         resultArray = await result.toArray();
         if(resultArray.length == 0 || result == null) {
-            logger.error("Get all game information error: There is currently nothing in the database to read!");
-            throw new DatabaseError("Get all game information error: There is currently nothing in the database to read!")
+            logger.error("Get all users model error: There is currently nothing in the database to read!");
+            throw new DatabaseError("Get all users model error: There is currently nothing in the database to read!")
         }
-        logger.info("Get all game information: successfully retrieved all information")
+        logger.info("Get all users model: successfully retrieved all users")
         return resultArray;
     }
     catch(err) {
-        logger.error("Get all game information error: " + err.message);
-        throw new DatabaseError("Get all game information error: " + err.message);
+        logger.error("Get all users model error: " + err.message);
+        throw new DatabaseError("Get all users model error: " + err.message);
     }
 }
 
@@ -91,21 +91,21 @@ async function getAllUsersInformation() {
  * @throws {DatabaseError} if there was an issue writing to the database. Generally should not happen
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
-async function addUserInformation(name, description) {
-    if(!validateUtils.isValid(name,description)) {
-        logger.error("Add game information error: name "+name+" or description "+description+" was not valid!");
-        throw new InvalidInputError("Add game information error: name "+name+" or description "+description+" was not valid!");
+async function addUser(id, name, password) {
+    if(!validateUtils.isUserValid(id, name, password)) {
+        logger.error("Add user model error: username "+name+" or password "+password+" was not valid!");
+        throw new InvalidInputError("Add user model error: name "+name+" or password "+password+" was not valid!");
     }
     else {
         try{
-            let result = (await getUserCollection().insertOne({name: name, description: description}));
+            let result = (await getUserCollection().insertOne({id: id, name: name, password: password}));
 
             if(result.acknowledged) {
-                logger.info("Add game information: Successfully added " + name);
+                logger.info("Add user model: Successfully added " + name);
                 return result;
             }
             else {
-                throw new DatabaseError("Add game information error: write request was not acknowledged!");
+                throw new DatabaseError("Add user model error: write request was not acknowledged!");
             }
         }
         catch(err) {
@@ -124,25 +124,25 @@ async function addUserInformation(name, description) {
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
-async function getUserSingle(name) {
+async function getUserSingle(name, password) {
     if(!name) {
-        logger.error("Get game information error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Get game information error: cannot pass in an empty parameter!");
+        logger.error("Get user model error: cannot pass in an empty parameter!");
+        throw new InvalidInputError("Get user model error: cannot pass in an empty parameter!");
     }
     else {
         let result = null;
         try{
-            result = await getUserCollection().findOne({name: name});
+            result = await getUserCollection().findOne({name: name, password: password});
             if(result == null) {
-                logger.error("Get game information error: name "+name+" was not found in database!");
-                throw new InvalidInputError("Get game information error: name "+name+" was not found in database!");
+                logger.error("Get user model error: name "+name+" was not found in database!");
+                throw new InvalidInputError("Get user model error: name "+name+" was not found in database!");
             }
 
-            logger.info("Get single game information: Successfully retrieved " + name);
+            logger.info("Get user model information: Successfully retrieved " + name);
             return result;
         }
         catch(err) {
-            logger.error("Get single game information error: " + err.message);
+            logger.error("Get user model information error: " + err.message);
             if (err instanceof InvalidInputError) {
                 throw new InvalidInputError(err.message);
             }
@@ -164,28 +164,28 @@ async function getUserSingle(name) {
  */
 async function getSingleUserById(id) {
     if(!id) {
-        logger.error("Get game information error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Get game information error: cannot pass in an empty parameter!");
+        logger.error("Get user model error: cannot pass in an empty parameter!");
+        throw new InvalidInputError("Get user model error: cannot pass in an empty parameter!");
     }
     else {
         let result = null;
         try{
-            result = await getUserCollection().findOne({_id: id});
+            result = await getUserCollection().findOne({id: id});
             if(result == null) {
-                logger.error("Get game information error: id "+id+" was not found in database!");
-                throw new InvalidInputError("Get game information error: id "+id+" was not found in database!");
+                logger.error("Get user model error: id "+id+" was not found in database!");
+                throw new InvalidInputError("Get user model error: id "+id+" was not found in database!");
             }
 
-            logger.info("Get single game information: Successfully retrieved " + result.name);
+            logger.info("Get single user model: Successfully retrieved " + result.name);
             return result;
         }
         catch(err) {
-            logger.error("Get single game information error: " + err.message);
+            logger.error("Get single user model error: " + err.message);
             if (err instanceof InvalidInputError) {
                 throw new InvalidInputError(err.message);
             }
             else {
-                throw new DatabaseError("Get game information error: " + err.message);
+                throw new DatabaseError("Get user model error: " + err.message);
             }
         }
     }
@@ -197,28 +197,28 @@ async function getSingleUserById(id) {
  * with a new name and description
  * @param {string} oldName The name of the game to update
  * @param {string} newName The name to replace the old one with
- * @param {string} newDescription The description to replace the old one with
+ * @param {string} newPassword The description to replace the old one with
  * @returns Whether the function succeeded in updating the game information
  * @throws {InvalidInputError} if the new name or description is invalid, if the old name was not found in the database
  * or if the old name parameter is empty
  * @throws {DatabaseError} If there was an issue updating the database
  */
-async function updateUser(oldName, newName, newDescription) {
-    if(!oldName) {
+async function updateUser(id, newName, newPassword) {
+    if(!id) {
         logger.error("Update game information error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update game information error: cannot pass in an empty parameter!");
-    } else if(!validateUtils.isValid(newName,newDescription)) {
-        logger.error("Update game information error: newName "+newName+" or newDescription "+newDescription+" was not valid!");
-        throw new InvalidInputError("Update game information error: newName "+newName+" or newDescription "+newDescription+" was not valid!");
+    } else if(!validateUtils.isValid(newName,newPassword)) {
+        logger.error("Update game information error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
+        throw new InvalidInputError("Update game information error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
     }
     else {
         try{
-            let checkExists = await getUserCollection().updateOne({name: oldName}, {$set: { name: newName, description: newDescription } });
+            let checkExists = await getUserCollection().updateOne({id: id}, {$set: { name: newName, password: newPassword } });
             if(checkExists.modifiedCount > 0) {
-                logger.info("Update game information: Successfully updated " + oldName);
+                logger.info("Update game information: Successfully updated user with id: " + id);
                 return checkExists;
             } else {
-                throw new InvalidInputError("Update game information error: name "+oldName+" was not found in database!");
+                throw new InvalidInputError("Update game information error: id "+id+" was not found in database!");
             }
         }
         catch(err) {
@@ -290,4 +290,4 @@ function getClient() {
     return client;
 }
 
-module.exports = {getClient,initialize,addUserInformation,getUserSingle,getAllUsersInformation,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
+module.exports = {getClient,initialize,addUserInformation: addUser,getUserSingle,getAllUsersInformation,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
