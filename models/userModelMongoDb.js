@@ -27,10 +27,10 @@ async function initialize(databaseName, reset, url) {
         logger.info("Connected to MongoDb");
         db = client.db(databaseName);
         
-        // Check to see if the collections exists for game information
-        gameCollectionCursor = await db.listCollections({ name: collectionName });
-        gameCollectionArray = await gameCollectionCursor.toArray();
-        if (gameCollectionArray.length == 0) {  
+        // Check to see if the collections exists for user model
+        userCollectionCursor = await db.listCollections({ name: collectionName });
+        userCollectionArray = await userCollectionCursor.toArray();
+        if (userCollectionArray.length == 0) {  
             // collation specifying case-insensitive collection
             const collation = { locale: "en", strength: 1 };
             // No match was found, so create new collection
@@ -61,11 +61,11 @@ async function close() {
 }
 
 /**
- * Gets a list of all data within the game collection of the database
+ * Gets a list of all data within the user collection of the database
  * @returns An array with the list of items in the collection
  * @throws {DatabaseError} If the database could not be read from or if there is nothing in the database
  */
-async function getAllUsersInformation() {
+async function getAllUsers() {
     try{
         let resultArray;
         result = await getUserCollection().find();
@@ -84,9 +84,10 @@ async function getAllUsersInformation() {
 }
 
 /**
- * Adds a new game information item to the game information collection with a name and description
- * @param {string} name Name of the game to add
- * @param {string} description Description of the game to add
+ * Adds a new user model item to the user model collection with a name and password
+ * @param {integer} id Id of the user to add
+ * @param {string} name Name of the user to add
+ * @param {string} password Password of the user to add
  * @returns true if the item was added successfully. false otherwise.
  * @throws {DatabaseError} if there was an issue writing to the database. Generally should not happen
  * @throws {InvalidInputError} if an invalid parameter was passed in
@@ -117,15 +118,16 @@ async function addUser(id, name, password) {
 }
 
 /**
- * Reads a game item from the game information collection of the database by
+ * Reads a user item from the user model collection of the database by
  * performing a search query with a passed in name
- * @param {string} name Name of the game to read
- * @returns A single game item with the name passed in to the function
+ * @param {string} name Name of the user to read
+ * @param {string} password Password of the user to read
+ * @returns A single user item with the name passed in to the function
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
 async function getUserSingle(name, password) {
-    if(!name) {
+    if(!name || !password) {
         logger.error("Get user model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Get user model error: cannot pass in an empty parameter!");
     }
@@ -147,7 +149,7 @@ async function getUserSingle(name, password) {
                 throw new InvalidInputError(err.message);
             }
             else {
-                throw new DatabaseError("Get game information error: " + err.message);
+                throw new DatabaseError("Get user model error: " + err.message);
             }
         }
     }
@@ -155,10 +157,10 @@ async function getUserSingle(name, password) {
 }
 
 /**
- * Reads a game item from the game information collection of the database by
+ * Reads a user item from the user model collection of the database by
  * performing a search query with a passed in id
- * @param {integer} id id of the game to read
- * @returns A single game item with the name passed in to the function
+ * @param {integer} id id of the user to read
+ * @returns A single user item with the name passed in to the function
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
@@ -193,41 +195,41 @@ async function getSingleUserById(id) {
 }
 
 /**
- * Updates one of the game items in the game information database by searching for the old name and updating it
+ * Updates one of the user items in the user database by searching for the old name and updating it
  * with a new name and description
- * @param {string} oldName The name of the game to update
+ * @param {string} oldName The name of the user to update
  * @param {string} newName The name to replace the old one with
  * @param {string} newPassword The description to replace the old one with
- * @returns Whether the function succeeded in updating the game information
+ * @returns Whether the function succeeded in updating the user
  * @throws {InvalidInputError} if the new name or description is invalid, if the old name was not found in the database
  * or if the old name parameter is empty
  * @throws {DatabaseError} If there was an issue updating the database
  */
 async function updateUser(id, newName, newPassword) {
     if(!id) {
-        logger.error("Update game information error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Update game information error: cannot pass in an empty parameter!");
-    } else if(!validateUtils.isValid(newName,newPassword)) {
-        logger.error("Update game information error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
-        throw new InvalidInputError("Update game information error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
+        logger.error("Update user model error: cannot pass in an empty parameter!");
+        throw new InvalidInputError("Update user model error: cannot pass in an empty parameter!");
+    } else if(!validateUtils.isUserValid(newName,newPassword)) {
+        logger.error("Update user model error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
+        throw new InvalidInputError("Update user model error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
     }
     else {
         try{
             let checkExists = await getUserCollection().updateOne({id: id}, {$set: { name: newName, password: newPassword } });
             if(checkExists.modifiedCount > 0) {
-                logger.info("Update game information: Successfully updated user with id: " + id);
+                logger.info("Update user model: Successfully updated user with id: " + id);
                 return checkExists;
             } else {
-                throw new InvalidInputError("Update game information error: id "+id+" was not found in database!");
+                throw new InvalidInputError("Update user model error: id "+id+" was not found in database!");
             }
         }
         catch(err) {
-            logger.error("Update game information error: " + err.message);
+            logger.error("Update user model error: " + err.message);
             if (err instanceof InvalidInputError) {
                 throw new InvalidInputError(err.message);
             }
             else {
-                throw new DatabaseError("Update game information error: "+err.message);
+                throw new DatabaseError("Update user model error: "+err.message);
             }
         }
     }
@@ -235,24 +237,24 @@ async function updateUser(id, newName, newPassword) {
 }
 
 /**
- * Deletes a game item from the game information database by searching for the item by name and removing it
- * @param {string} name Name of the game to delete
+ * Deletes a user item from the user database by searching for the item by id and removing it
+ * @param {string} id Id of the user to delete
  * @returns Whether the function succeeded in deleting the item
  * @throws {InvalidInputError} if an empty name parameter is passed in or if the name was not found in the database
- * @throws {DatabaseError} If there was an issue deleting the game from the database
+ * @throws {DatabaseError} If there was an issue deleting the user from the database
  */
-async function deleteUser(name) {
-    if(!name) {
-        logger.error("Delete game information error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Delete game information error: cannot pass in an empty parameter!");
+async function deleteUser(id) {
+    if(!id) {
+        logger.error("Delete user model error: cannot pass in an empty parameter!");
+        throw new InvalidInputError("Delete user model error: cannot pass in an empty parameter!");
     }
     else {
         let checkExists = null;
         try{
-            checkExists = await getUserSingle(name);
-            let result = (await getUserCollection().deleteOne({name: name}));
+            checkExists = await getUserSingle(id);
+            let result = (await getUserCollection().deleteOne({id: id}));
             if(result.deletedCount > 0) {
-                logger.info("Delete game information: Successfully deleted " + name);
+                logger.info("Delete user model: Successfully deleted " + id);
                 return true;
             }
             else {
@@ -260,12 +262,12 @@ async function deleteUser(name) {
             }
         }
         catch(err) {
-            logger.error("Delete game information error: " + err.message);
+            logger.error("Delete user model error: " + err.message);
             if (err instanceof InvalidInputError) {
-                throw new InvalidInputError("Delete game information error: "+err.message);
+                throw new InvalidInputError("Delete user model error: "+err.message);
             }
             else {
-                throw new DatabaseError("Delete game information error: "+err.message);
+                throw new DatabaseError("Delete user model error: "+err.message);
             }
         }
     }
@@ -273,8 +275,8 @@ async function deleteUser(name) {
 }
 
 /**
- * Convenience function that returns the game information collection 
- * @returns Game information collection
+ * Convenience function that returns the user model collection 
+ * @returns User information collection
  * @throws {DatabaseError} If the collection could not be registered
  */
 function getUserCollection() {
@@ -290,4 +292,4 @@ function getClient() {
     return client;
 }
 
-module.exports = {getClient,initialize,addUserInformation: addUser,getUserSingle,getAllUsersInformation,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
+module.exports = {getClient,initialize,addUserInformation: addUser,getUserSingle, getAllUsers,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
