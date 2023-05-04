@@ -253,4 +253,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addTasklogInformation: addTasklog, getAllTasklogs, close, getTasklogCollection, updateTasklog, deleteTasklog, getSingleTasklogById }
+module.exports = { getClient, initialize, addTasklog, getAllTasklogs, close, getTasklogCollection, updateTasklog, deleteTasklog, getSingleTasklogById }

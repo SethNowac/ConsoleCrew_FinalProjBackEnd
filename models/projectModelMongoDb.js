@@ -258,4 +258,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addProjectInformation: addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById }
+module.exports = { getClient, initialize, addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById }
