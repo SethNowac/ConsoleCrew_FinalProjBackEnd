@@ -21,8 +21,7 @@ const logger = require("../logger")
  */
 async function initialize(databaseName, reset, url) {
     try {
-        const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;
-        
+        //const url = process.env.URL_PRE + process.env.MONGODB_PWD + process.env.URL_POST;     
         client = new MongoClient(url); // store connected client for use while the app is running
         await client.connect();
         logger.info("Connected to MongoDb");
@@ -77,7 +76,7 @@ async function getAllNotesByProject(projectId) {
 
         result = await getNotesCollection().find({ projectId: projectId });
 
-        if(result == null){
+        if(!result){
             logger.error("Get notes error: Notes contained by project matching id: "+ projectId +" do not exist.");
             throw new InvalidInputError("Get notes error: Notes contained by project matching id: "+ projectId +" do not exist.");
         }
