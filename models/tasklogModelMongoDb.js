@@ -1,4 +1,4 @@
-const dbName = "tasklog_db";
+//const dbName = "tasklog_db";
 const collectionName = "Tasklog";
 
 // Include class that enables a connection to the mongoDB database

@@ -1,4 +1,4 @@
-const dbName = "notes_db";
+//const dbName = "notes_db";
 const collectionName = "Notes";
 
 // Include class that enables a connection to the mongoDB database

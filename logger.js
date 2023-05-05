@@ -15,7 +15,7 @@ const transport = pino.transport({
 
 const logger = pino(
     {
-        level: "info", // minimum level to log
+        level: "warn", // minimum level to log
     },
     transport
 );

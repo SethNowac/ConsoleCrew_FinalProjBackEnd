@@ -22,6 +22,8 @@ app.use(bodyParser.json());
 // Register routes from all controllers 
 //  (Assumes a flat directory structure and common 
 // 'routeRoot' / 'router' export)
+
+/*
 controllers.forEach((controllerName) => {
     try {
         const controllerRoutes = require('./controllers/' + controllerName);
@@ -36,5 +38,5 @@ controllers.forEach((controllerName) => {
 
 const listEndpoints = require('express-list-endpoints');
 logger.info(listEndpoints(app));
-
+*/
 module.exports = app

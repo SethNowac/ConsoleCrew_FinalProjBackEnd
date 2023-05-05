@@ -1,4 +1,4 @@
-const dbName = "storyboard_db";
+//const dbName = "storyboard_db";
 const collectionName = "Storyboard";
 
 // Include class that enables a connection to the mongoDB database
