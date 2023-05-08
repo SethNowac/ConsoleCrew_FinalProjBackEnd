@@ -166,17 +166,17 @@ async function getSingleStoryboardById(id) {
  * or if the old name parameter is empty
  * @throws {DatabaseError} If there was an issue updating the database
  */
-async function updateStoryboard(id, projectId, categoryId, description) {
+async function updateStoryboard(id, categoryId, description) {
     if (!id) {
         logger.error("Update storyboard model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update storyboard model error: cannot pass in an empty parameter!");
-    } else if (!validateUtils.isStoryboardValid(id, projectId, categoryId, description)) {
+    } else if (!validateUtils.isStoryboardValid(id, categoryId, description)) {
         logger.error("Update storyboard model error: one of the parameters was not valid!");
         throw new InvalidInputError("Update storyboard model error: one of the parameters was not valid!");
     }
     else {
         try {
-            let checkExists = await getStoryboardCollection().updateOne({ id: id }, { $set: { projectId: projectId, categoryId: categoryId, description: description } });
+            let checkExists = await getStoryboardCollection().updateOne({ id: id }, { $set: { categoryId: categoryId, description: description } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update storyboard model: Successfully updated storyboard with id: " + id);
                 return checkExists;
