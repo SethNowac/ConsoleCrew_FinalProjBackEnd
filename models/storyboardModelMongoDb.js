@@ -93,7 +93,7 @@ async function getAllStoryboards() {
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
 async function addStoryboard(id, projectId, categoryId, description) {
-    if (!validateUtils.isStoryboardValid(id, projectId, categoryId, description)) {
+    if (!validateUtils.isAddStoryboardValid(id, projectId, categoryId, description)) {
         logger.error("Add storyboard model error: one of the parameters was not valid!");
         throw new InvalidInputError("Add storyboard model error: one of the parameters was not valid!");
     }
@@ -170,7 +170,7 @@ async function updateStoryboard(id, categoryId, description) {
     if (!id) {
         logger.error("Update storyboard model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update storyboard model error: cannot pass in an empty parameter!");
-    } else if (!validateUtils.isStoryboardValid(id, categoryId, description)) {
+    } else if (!validateUtils.isUpdateStoryboardValid(id, categoryId, description)) {
         logger.error("Update storyboard model error: one of the parameters was not valid!");
         throw new InvalidInputError("Update storyboard model error: one of the parameters was not valid!");
     }

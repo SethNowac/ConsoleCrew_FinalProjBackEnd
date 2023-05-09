@@ -93,7 +93,7 @@ async function getAllTasklogs() {
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
 async function addTasklog(id, issue, projectId) {
-    if (!validateUtils.isTasklogValid(id, issue, projectId)) {
+    if (!validateUtils.isAddTasklogValid(id, issue, projectId)) {
         logger.error("Add tasklog model error: one or more tasklog parameters were not valid!");
         throw new InvalidInputError("Add tasklog model error: one or more tasklog parameters were not valid!");
     }
@@ -139,7 +139,7 @@ async function getSingleTasklogById(id) {
                 throw new InvalidInputError("Get tasklog model error: id " + id + " was not found in database!");
             }
 
-            logger.info("Get single tasklog model: Successfully retrieved " + result.name);
+            logger.info("Get single tasklog model: Successfully retrieved " + result.issue);
             return result;
         }
         catch (err) {
@@ -170,7 +170,7 @@ async function updateTasklog(id, newIssue, isResolved, newNotes) {
     if (!id) {
         logger.error("Update tasklog model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update tasklog model error: cannot pass in an empty parameter!");
-    } else if (!validateUtils.isTasklogValid(newName, newPassword)) {
+    } else if (!validateUtils.isUpdateTasklogValid(id, newIssue, isResolved)) {
         logger.error("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
         throw new InvalidInputError("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
     }
