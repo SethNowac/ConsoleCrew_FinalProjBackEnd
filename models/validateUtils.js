@@ -1,23 +1,61 @@
 const validator = require('validator');
 
-/**
- * Validates that the game input is not empty, and checks that the length of the name
- * does not exceed 30 characters and the description should not exceed 250. Both should be short.
- * @param {string} name Name of the game to add
- * @param {string} desc Short description of the game to add
- * @returns True if both name and description are valid. False otherwise.
- */
-function isValid(name,desc) {
-    const minNameChars = 0;
-    const minDescChars = 5;
-    const maxNameChars = 50;
-    const maxDescChars = 250;
-
-    if (!name || !desc || !validator.isLength(name, minNameChars, maxNameChars) || !validator.isLength(desc, minDescChars, maxDescChars)) {
+function isTagValid(id, name) {
+    if(!id || id < 0 || !name) {
         return false;
     }
-    
     return true;
 }
 
-module.exports= {isValid};
+function isAddProjectValid(id, title, desc, catId, genre, userId) {
+    if(!id || id < 0 || userId < 0 || !title || !desc || !catId || !genre || !userId) {
+        return false;
+    }
+    return true;
+}
+
+function isUpdateProjectValid(id, newTitle, newDesc, newCatId, newGenre) {
+    if(!id || id < 0 || !newTitle || !newDesc || !newCatId || !newGenre) {
+        return false;
+    }
+    return true;
+}
+
+function isAddStoryboardValid(id, projectId, categoryId, description) {
+    if(!id || id < 0 || !projectId || projectId < 0 || !categoryId || categoryId < 0 || !description) {
+        return false;
+    }
+    return true;
+}
+
+function isUpdateStoryboardValid(id, categoryId, description) {
+    if(!id || id < 0 || !categoryId || categoryId < 0 || !description) {
+        return false;
+    }
+    return true;
+}
+
+function isUserValid(id, name, password) {
+    if(!id || id < 0 || !name || !password) {
+        return false;
+    }
+    return true;
+}
+
+function isAddTasklogValid(id, issue, projectId) {
+    if(!id || id < 0 || !issue || !projectId || projectId < 0) {
+        return false;
+    }
+    return true;
+}
+
+function isUpdateTasklogValid(id, issue, isResolved) {
+    if(!id || id < 0 || !issue || !isResolved) {
+        return false;
+    }
+    return true;
+}
+
+
+
+module.exports= {isTagValid, isAddProjectValid, isUpdateProjectValid, isAddStoryboardValid, isUpdateStoryboardValid, isUserValid, isAddTasklogValid, isUpdateTasklogValid};

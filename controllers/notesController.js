@@ -3,13 +3,16 @@ const express = require('express');
 const { send } = require('express/lib/response');
 const router = express.Router();
 
+
 const routeRoot = '/projects';
 const logger = require("../logger");
+
 const { DatabaseError } = require("../models/DatabaseError");
 const { InvalidInputError } = require("../models/InvalidInputErrors");
 
 const notesModel = require("../models/notesModelMongoDb");
 let requestJson;
+
 
 
 router.get('/:id/notes/:noteId', handleGetSingleNote);
@@ -28,6 +31,7 @@ async function handleGetSingleNote(request, response){
         }
     } catch (err) {
         logger.error("Note controller, failed to find note."+ err.message);
+
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});
@@ -42,6 +46,7 @@ async function handleGetSingleNote(request, response){
         }
     }
 }
+
 
 router.get('/:id/notes', handleGetAllNotesByProject);
 async function handleGetAllNotesByProject(request, response){
@@ -59,6 +64,7 @@ async function handleGetAllNotesByProject(request, response){
         }
     } catch (err) {
         logger.error("Note controller, failed to find notes."+ err.message);
+
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});
@@ -73,6 +79,7 @@ async function handleGetAllNotesByProject(request, response){
         }
     }
 }
+
 
 router.post('/:id/notes', handleAddNote);
 async function handleAddNote(request, response) {
@@ -91,6 +98,7 @@ async function handleAddNote(request, response) {
         }
     } catch (err) {
         logger.error("Note controller, failed to add note."+ err.message);
+
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});
@@ -106,6 +114,7 @@ async function handleAddNote(request, response) {
     }
 }
 
+
 router.put('/:id/notes', handleUpdateNote);
 async function handleUpdateNote(request, response){
     requestJson = request.body;
@@ -118,6 +127,7 @@ async function handleUpdateNote(request, response){
         }
     } catch (err) {
         logger.error("Note controller, failed to update note."+ err.message);
+
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});
@@ -132,6 +142,7 @@ async function handleUpdateNote(request, response){
         }
     }
 }
+
 
 router.delete('/:id/notes/:noteId', handleDeleteNote);
 async function handleDeleteNote(request, response){
@@ -151,6 +162,7 @@ async function handleDeleteNote(request, response){
         }
     } catch (err) {
         logger.error("Note controller, failed to delete note."+ err.message);
+
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});

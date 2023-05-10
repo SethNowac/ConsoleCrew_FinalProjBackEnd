@@ -1,4 +1,4 @@
-const dbName = "user_db";
+//const dbName = "user_db";
 const collectionName = "Users";
 
 // Include class that enables a connection to the mongoDB database
@@ -292,4 +292,4 @@ function getClient() {
     return client;
 }
 
-module.exports = {getClient,initialize,addUserInformation: addUser,getUserSingle, getAllUsers,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
+module.exports = {getClient,initialize,addUser,getUserSingle, getAllUsers,close,getUserCollection,updateUser,deleteUser,getSingleUserById}

@@ -1,4 +1,4 @@
-const dbName = "project_db";
+//const dbName = "project_db";
 const collectionName = "Projects";
 
 // Include class that enables a connection to the mongoDB database
@@ -96,7 +96,7 @@ async function getAllProjects() {
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
 async function addProject(id, title, desc, catId, genre, userId) {
-    if (!validateUtils.isProjectValid(id, title, desc, catId, genre, userId)) {
+    if (!validateUtils.isAddProjectValid(id, title, desc, catId, genre, userId)) {
         logger.error("Add project error: project with title " + title + " was not valid!");
         throw new InvalidInputError("Add project error: project with title " + title + " was not valid!");
     }
@@ -175,7 +175,7 @@ async function updateProject(id, newTitle, newDesc, newCatId, newGenre) {
     if (!id) {
         logger.error("Update project error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update project error: cannot pass in an empty parameter!");
-    } else if (!validateUtils.isProjectValid(id, newTitle, newDesc, newCatId, newGenre)) {
+    } else if (!validateUtils.isUpdateProjectValid(id, newTitle, newDesc, newCatId, newGenre)) {
         logger.error("Update project error: one of the inputs was not valid!");
         throw new InvalidInputError("Update project error: one of the inputs was not valid!");
     }
@@ -258,4 +258,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addProjectInformation: addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById }
+module.exports = { getClient, initialize, addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById }
