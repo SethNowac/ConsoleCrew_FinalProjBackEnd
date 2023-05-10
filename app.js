@@ -1,5 +1,8 @@
+const cookieParser = require('cookie-parser');
+
 const express = require('express');
 const app = express();
+app.use(cookieParser());
 
 const logger = require('./logger')
 const pinohttp = require('pino-http');
@@ -10,7 +13,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 // names of each controller in the server
-const controllers = ['homeController', 'gameOrganizerController', 'errorController']
+const controllers = ['homeController', 'categoryController', 'notesController', 'projectController', 'sessionController',
+    'storyboardController', 'tagsController', 'tasklogController', 'userController', 'errorController']
 
 app.use(cors());
 app.use(express.json());
@@ -23,7 +27,6 @@ app.use(bodyParser.json());
 //  (Assumes a flat directory structure and common 
 // 'routeRoot' / 'router' export)
 
-/*
 controllers.forEach((controllerName) => {
     try {
         const controllerRoutes = require('./controllers/' + controllerName);
@@ -38,5 +41,5 @@ controllers.forEach((controllerName) => {
 
 const listEndpoints = require('express-list-endpoints');
 logger.info(listEndpoints(app));
-*/
+
 module.exports = app

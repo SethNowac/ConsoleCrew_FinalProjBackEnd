@@ -158,24 +158,24 @@ async function getUserSingle(name, password) {
 
 /**
  * Reads a user item from the user model collection of the database by
- * performing a search query with a passed in id
- * @param {integer} id id of the user to read
+ * performing a search query with a passed in name
+ * @param {string} name id of the user to read
  * @returns A single user item with the name passed in to the function
  * @throws {InvalidInputError} if an empty parameter is passed in
  * @throws {DatabaseError} If the database could not be read from
  */
-async function getSingleUserById(id) {
-    if(!id) {
+async function getSingleUserByName(name) {
+    if(!name) {
         logger.error("Get user model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Get user model error: cannot pass in an empty parameter!");
     }
     else {
         let result = null;
         try{
-            result = await getUserCollection().findOne({id: id});
+            result = await getUserCollection().findOne({name: name});
             if(result == null) {
-                logger.error("Get user model error: id "+id+" was not found in database!");
-                throw new InvalidInputError("Get user model error: id "+id+" was not found in database!");
+                logger.error("Get user model error: name "+name+" was not found in database!");
+                throw new InvalidInputError("Get user model error: id "+name+" was not found in database!");
             }
 
             logger.info("Get single user model: Successfully retrieved " + result.name);
@@ -292,4 +292,4 @@ function getClient() {
     return client;
 }
 
-module.exports = {getClient,initialize,addUser,getUserSingle, getAllUsers,close,getUserCollection,updateUser,deleteUser,getSingleUserById}
+module.exports = {getClient,initialize,addUser,getUserSingle, getAllUsers,close,getUserCollection,updateUser,deleteUser,getSingleUserByName}

@@ -1,5 +1,7 @@
 const express = require('express');
 const { send } = require('express/lib/response');
+const { authenticateUser, refreshSession } = require('./sessionController');
+const logger = require('../logger');
 const router = express.Router();
 
 // Uses /home to make a request to the home page
@@ -12,6 +14,14 @@ const routeRoot = '/home';
  */
 router.get('/', sendGreetingResponseToServer);
 function sendGreetingResponseToServer(request, response) {
+    const authenticatedSession = authenticateUser(request);
+    if (!authenticatedSession) {
+        response.sendStatus(401); // Unauthorized access
+        return;
+    }
+    logger.info("User " + authenticatedSession.userSession.username + " is authorized for home page");
+
+    refreshSession(request, response);
     response.send("Welcome to the home screen");
 }
 

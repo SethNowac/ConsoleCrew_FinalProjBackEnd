@@ -1254,3 +1254,82 @@
 {"level":50,"time":1683683199297,"pid":10348,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Add category model error: id or name Cutscene was not valid!"}
 {"level":50,"time":1683683488079,"pid":25520,"hostname":"DESKTOP-BBDALJM","msg":"Add tag model error: id or tag name Indie was not valid!"}
 {"level":50,"time":1683683488079,"pid":25520,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Add tag model error: id or name Indie was not valid!"}
+{"level":50,"time":1683701224625,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name register was not found in database!"}
+{"level":50,"time":1683701224625,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id register was not found in database!"}
+{"level":50,"time":1683701224626,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"User controller | Failed to get a single user: Get user model error: id register was not found in database!"}
+{"level":50,"time":1683701289015,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name register was not found in database!"}
+{"level":50,"time":1683701289015,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id register was not found in database!"}
+{"level":50,"time":1683701289015,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"User controller | Failed to get a single user: Get user model error: id register was not found in database!"}
+{"level":50,"time":1683701405690,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name Seth101 was not found in database!"}
+{"level":50,"time":1683701405690,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id Seth101 was not found in database!"}
+{"level":50,"time":1683701405690,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id Seth101 was not found in database!"}
+{"level":50,"time":1683701415714,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name Seth101 was not found in database!"}
+{"level":50,"time":1683701415714,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id Seth101 was not found in database!"}
+{"level":50,"time":1683701415714,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id Seth101 was not found in database!"}
+{"level":50,"time":1683701424727,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683701424727,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701424727,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701433388,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701541580,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683701541580,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701541580,"pid":7052,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701724926,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701762835,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701841587,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701854749,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701859865,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac101 was not found in database!"}
+{"level":50,"time":1683701859866,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac101 was not found in database!"}
+{"level":50,"time":1683701859866,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac101 was not found in database!"}
+{"level":50,"time":1683701866771,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701885226,"pid":6020,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701893073,"pid":24596,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683701902066,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac101 was not found in database!"}
+{"level":50,"time":1683701902066,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac101 was not found in database!"}
+{"level":50,"time":1683701902066,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac101 was not found in database!"}
+{"level":50,"time":1683701905848,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683701905849,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701905849,"pid":28632,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701929039,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683701929040,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701929040,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701945658,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683701945658,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683701945658,"pid":9208,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683702060403,"pid":30024,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac was not found in database!"}
+{"level":50,"time":1683702060404,"pid":30024,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac was not found in database!"}
+{"level":50,"time":1683702176664,"pid":3568,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702211692,"pid":3568,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702412577,"pid":10584,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683702419666,"pid":10584,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702427672,"pid":10584,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702441136,"pid":10584,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702493967,"pid":10196,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702669148,"pid":26324,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702734419,"pid":8788,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1683702828235,"pid":20208,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702841155,"pid":1924,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702843796,"pid":1924,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac121 was not found in database!"}
+{"level":50,"time":1683702843796,"pid":1924,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac121 was not found in database!"}
+{"level":50,"time":1683702866378,"pid":1504,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702881835,"pid":1504,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702893043,"pid":20792,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702897773,"pid":20792,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702901785,"pid":20792,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac already exists!"}
+{"level":50,"time":1683702904969,"pid":20792,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702913062,"pid":29308,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username sethnowac121 already exists!"}
+{"level":50,"time":1683702931773,"pid":29308,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth was not found in database!"}
+{"level":50,"time":1683702931773,"pid":29308,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth was not found in database!"}
+{"level":50,"time":1683702937630,"pid":29308,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth1232 was not found in database!"}
+{"level":50,"time":1683702937630,"pid":29308,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth1232 was not found in database!"}
+{"level":50,"time":1683702945351,"pid":18228,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username seth1232 already exists!"}
+{"level":50,"time":1683702961544,"pid":11864,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username seth1232 already exists!"}
+{"level":50,"time":1683702997002,"pid":18936,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username seth already exists!"}
+{"level":50,"time":1683703000439,"pid":18936,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username seth already exists!"}
+{"level":50,"time":1683703006992,"pid":18936,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name michael was not found in database!"}
+{"level":50,"time":1683703006992,"pid":18936,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id michael was not found in database!"}
+{"level":50,"time":1683703015067,"pid":16432,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username michael already exists!"}
+{"level":50,"time":1683703019615,"pid":16432,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name james was not found in database!"}
+{"level":50,"time":1683703019615,"pid":16432,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id james was not found in database!"}
+{"level":50,"time":1683703478983,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name register was not found in database!"}
+{"level":50,"time":1683703478984,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id register was not found in database!"}
+{"level":50,"time":1683703478984,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"User controller | Failed to get a single user: Get user model error: id register was not found in database!"}
