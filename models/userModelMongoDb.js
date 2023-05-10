@@ -209,7 +209,7 @@ async function updateUser(id, newName, newPassword) {
     if(!id) {
         logger.error("Update user model error: cannot pass in an empty parameter!");
         throw new InvalidInputError("Update user model error: cannot pass in an empty parameter!");
-    } else if(!validateUtils.isUserValid(newName,newPassword)) {
+    } else if(!validateUtils.isUserValid(id, newName, newPassword)) {
         logger.error("Update user model error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
         throw new InvalidInputError("Update user model error: newName "+newName+" or newDescription "+newPassword+" was not valid!");
     }

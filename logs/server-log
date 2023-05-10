@@ -1248,3 +1248,9 @@
 {"level":50,"time":1683315900270,"pid":4244,"hostname":"PE322-05","msg":"Add tag model error: id or tag name Stealth was not valid!"}
 {"level":50,"time":1683315900270,"pid":4244,"hostname":"PE322-05","msg":"Add tag model error: id or tag name Third-Person Shooter was not valid!"}
 {"level":50,"time":1683316288058,"pid":4428,"hostname":"PE322-05","msg":"Initialize error: addTag is not defined"}
+{"level":50,"time":1683673123039,"pid":27652,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Cutscene was not valid!"}
+{"level":50,"time":1683673123040,"pid":27652,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Add category model error: id or name Cutscene was not valid!"}
+{"level":50,"time":1683683199297,"pid":10348,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Cutscene was not valid!"}
+{"level":50,"time":1683683199297,"pid":10348,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Add category model error: id or name Cutscene was not valid!"}
+{"level":50,"time":1683683488079,"pid":25520,"hostname":"DESKTOP-BBDALJM","msg":"Add tag model error: id or tag name Indie was not valid!"}
+{"level":50,"time":1683683488079,"pid":25520,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Add tag model error: id or name Indie was not valid!"}
