@@ -14,7 +14,8 @@ const validateUtils = require("./validateUtils");
 let client;
 let storyboardCollection;
 
-const logger = require("../logger")
+const logger = require("../logger");
+const { authenticateUser, refreshSession } = require("../controllers/sessionController");
 
 /**
  * Connect up to the online MongoDb database with the name stored in dbName
@@ -67,6 +68,15 @@ async function close() {
  */
 async function getAllStoryboards() {
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all storyboards");
+
+        refreshSession(request, response);
+
         let resultArray;
         result = await getStoryboardCollection().find();
         resultArray = await result.toArray();
@@ -99,6 +109,15 @@ async function addStoryboard(id, projectId, categoryId, description) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for add storyboard");
+
+            refreshSession(request, response);
+
             let result = (await getStoryboardCollection().insertOne({ id: id, projectId: projectId, categoryId: categoryId, description: description }));
 
             if (result.acknowledged) {
@@ -133,6 +152,15 @@ async function getSingleStoryboardById(id) {
     else {
         let result = null;
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for get single storyboard");
+
+            refreshSession(request, response);
+
             result = await getStoryboardCollection().findOne({ id: id });
             if (result == null) {
                 logger.error("Get storyboard model error: id " + id + " was not found in database!");
@@ -176,6 +204,15 @@ async function updateStoryboard(id, categoryId, description) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for update storyboard");
+
+            refreshSession(request, response);
+
             let checkExists = await getStoryboardCollection().updateOne({ id: id }, { $set: { categoryId: categoryId, description: description } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update storyboard model: Successfully updated storyboard with id: " + id);
@@ -212,6 +249,15 @@ async function deleteStoryboard(id) {
     else {
         let checkExists = null;
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete storyboard");
+
+            refreshSession(request, response);
+
             checkExists = await getStoryboardSingle(id);
             let result = (await getStoryboardCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {

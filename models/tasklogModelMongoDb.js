@@ -14,7 +14,8 @@ const validateUtils = require("./validateUtils");
 let client;
 let tasklogCollection;
 
-const logger = require("../logger")
+const logger = require("../logger");
+const { authenticateUser, refreshSession } = require("../controllers/sessionController");
 
 /**
  * Connect up to the online MongoDb database with the name stored in dbName
@@ -67,6 +68,15 @@ async function close() {
  */
 async function getAllTasklogs() {
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all tasklogs");
+
+        refreshSession(request, response);
+
         let resultArray;
         result = await getTasklogCollection().find();
         resultArray = await result.toArray();
@@ -99,6 +109,15 @@ async function addTasklog(id, issue, projectId) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for add tasklog");
+
+            refreshSession(request, response);
+
             let result = (await getTasklogCollection().insertOne({ id: id, issue: issue, isResolved: false, notes: "", projectId: projectId }));
 
             if (result.acknowledged) {
@@ -133,6 +152,15 @@ async function getSingleTasklogById(id) {
     else {
         let result = null;
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for get single tasklog");
+
+            refreshSession(request, response);
+
             result = await getTasklogCollection().findOne({ id: id });
             if (result == null) {
                 logger.error("Get tasklog model error: id " + id + " was not found in database!");
@@ -176,6 +204,15 @@ async function updateTasklog(id, newIssue, isResolved, newNotes) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for update tasklog");
+
+            refreshSession(request, response);
+
             let checkExists = await getTasklogCollection().updateOne({ id: id }, { $set: { issue: newIssue, isResolved: isResolved, notes: newNotes } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update tasklog model: Successfully updated tasklog with id: " + id);
@@ -212,6 +249,15 @@ async function deleteTasklog(id) {
     else {
         let checkExists = null;
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete tasklog");
+
+            refreshSession(request, response);
+
             checkExists = await getTasklogSingle(id);
             let result = (await getTasklogCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {

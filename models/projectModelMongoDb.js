@@ -14,7 +14,8 @@ const validateUtils = require("./validateUtils");
 let client;
 let projectCollection;
 
-const logger = require("../logger")
+const logger = require("../logger");
+const { authenticateUser, refreshSession } = require("../controllers/sessionController");
 
 /**
  * Connect up to the online MongoDb database with the name stored in dbName
@@ -67,6 +68,15 @@ async function close() {
  */
 async function getAllProjects() {
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all projects");
+    
+        refreshSession(request, response);
+
         let resultArray;
         result = await getProjectCollection().find();
         resultArray = await result.toArray();
@@ -102,6 +112,15 @@ async function addProject(id, title, desc, catId, genre, userId) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for add project");
+
+            refreshSession(request, response);
+
             let result = (await getProjectCollection().insertOne({ id: id, title: title, description: desc, categoryId: catId, genre: genre, userId: userId }));
 
             if (result.acknowledged) {
@@ -136,6 +155,15 @@ async function getSingleProjectById(id) {
     else {
         let result = null;
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for get single project");
+
+            refreshSession(request, response);
+
             result = await getProjectCollection().findOne({ id: id });
             if (result == null) {
                 logger.error("Get project error: id " + id + " was not found in database!");
@@ -181,6 +209,15 @@ async function updateProject(id, newTitle, newDesc, newCatId, newGenre) {
     }
     else {
         try {
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for update project");
+
+            refreshSession(request, response);
+
             let checkExists = await getProjectCollection().updateOne({ id: id }, { $set: { id: id, title: newTitle, description: newDesc, categoryId: newCatId, genre: newGenre } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update project: Successfully updated project with id: " + id);
@@ -217,6 +254,16 @@ async function deleteProject(id) {
     else {
         let checkExists = null;
         try {
+
+            const authenticatedSession = authenticateUser(request);
+            if (!authenticatedSession) {
+                response.sendStatus(401); // Unauthorized access
+                return;
+            }
+            logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete project");
+
+            refreshSession(request, response);
+
             checkExists = await getProjectSingle(id);
             let result = (await getProjectCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {
