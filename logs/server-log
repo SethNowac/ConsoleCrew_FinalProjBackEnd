@@ -1333,3 +1333,56 @@
 {"level":50,"time":1683703478983,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name register was not found in database!"}
 {"level":50,"time":1683703478984,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id register was not found in database!"}
 {"level":50,"time":1683703478984,"pid":20660,"hostname":"DESKTOP-BBDALJM","msg":"User controller | Failed to get a single user: Get user model error: id register was not found in database!"}
+{"level":50,"time":1684349375873,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684349375874,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684349375875,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684349747441,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349747441,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349747442,"pid":22832,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684349889819,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349889819,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349889819,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684349899159,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349899159,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349899159,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684349968547,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349968547,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684349968547,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350090467,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350090467,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350090467,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350148605,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350148606,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350148606,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350188460,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350188460,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350188460,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350243394,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350243394,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350243394,"pid":24992,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350444078,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350444079,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350444079,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350472549,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350472549,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350472549,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350479907,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350479907,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350479907,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350553688,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350553688,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350553688,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684350681044,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350681044,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id seth@gmail.com was not found in database!"}
+{"level":50,"time":1684350681045,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: seth@gmail.com"}
+{"level":50,"time":1684352749340,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name james was not found in database!"}
+{"level":50,"time":1684352749340,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id james was not found in database!"}
+{"level":50,"time":1684352794247,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1684352805264,"pid":9056,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1684353034673,"pid":3200,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name james@gmail.com was not found in database!"}
+{"level":50,"time":1684353034673,"pid":3200,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id james@gmail.com was not found in database!"}
+{"level":50,"time":1684353748658,"pid":26704,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684355055064,"pid":26712,"hostname":"DESKTOP-BBDALJM","msg":"Invalid registration - username james@gmail.com already exists!"}
+{"level":50,"time":1684356371361,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name james@gmail.cmo was not found in database!"}
+{"level":50,"time":1684356371362,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id james@gmail.cmo was not found in database!"}
+{"level":50,"time":1684356371362,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.cmo"}

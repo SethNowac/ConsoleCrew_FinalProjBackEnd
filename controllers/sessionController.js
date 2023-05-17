@@ -13,9 +13,9 @@ async function loginUser(request, response) {
     const username = request.body.username;
     const password = request.body.password;
 
-    if(username && password) {
+    if (username && password) {
         const credentials = await checkCredentials(username, password);
-        if(credentials.isSame) {
+        if (credentials.isSame) {
             logger.info("Successful login for user " + username);
             // Create a session object that will expire in 30 minutes
             const sessionId = createSession(username, 30);
@@ -23,30 +23,32 @@ async function loginUser(request, response) {
             // Save cookie that will expire.
             response.cookie("sessionId", sessionId, { expires: getSession(sessionId).expiresAt, httpOnly: true });
             response.cookie("userId", credentials.id, { expires: getSession(sessionId).expiresAt, httpOnly: true });
+            response.sendStatus(200); //Succeeded in logging in
+            return; // Put this here to prevent two statuses from being sent
         } else {
             logger.error("Unsuccessful login: Invalid username / password for user: " + username);
         }
     } else {
         logger.error("Unsuccessful login: Empty username or password given!");
     }
-    response.redirect("/home"); // Redirect to main page
+    response.sendStatus(401); // Redirect to main page
 };
 
 router.get('/logout', logoutUser);
 
 function logoutUser(request, response) {
-  const authenticatedSession = authenticateUser(request);
-  if (!authenticatedSession) {
-      response.sendStatus(401); // Unauthorized access
-      return;
-  }
-  deleteSession(authenticatedSession.sessionId)
-  logger.info("Logged out user " + authenticatedSession.userSession.username);
-  
-  // "erase" cookie by forcing it to expire.
-  response.cookie("sessionId", "", { expires: new Date() , httpOnly: true}); 
-  response.cookie("userId", "", { expires: new Date() , httpOnly: true}); 
-  response.redirect('/home');
+    const authenticatedSession = authenticateUser(request);
+    if (!authenticatedSession) {
+        response.sendStatus(401); // Unauthorized access
+        return;
+    }
+    deleteSession(authenticatedSession.sessionId)
+    logger.info("Logged out user " + authenticatedSession.userSession.username);
+
+    // "erase" cookie by forcing it to expire.
+    response.cookie("sessionId", "", { expires: new Date(), httpOnly: true });
+    response.cookie("userId", "", { expires: new Date(), httpOnly: true });
+    response.sendStatus(401);
 };
 
 function authenticateUser(request) {
@@ -87,6 +89,20 @@ function refreshSession(request, response) {
     // renewed expiration time
     response.cookie("sessionId", newSessionId, { expires: getSession(newSessionId).expiresAt, httpOnly: true })
     return newSessionId;
+}
+
+router.get("/auth", authUser);
+function authUser(request, response) {
+    try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401);
+        } else {
+            response.sendStatus(200);
+        }
+    } catch (error) {
+        response.sendStatus(401);
+    }
 }
 
 

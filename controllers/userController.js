@@ -221,7 +221,7 @@ async function registerUser(request, response) {
             minUppercase: 1,
             minNumbers: 1,
             minSymbols: 0,
-          }) && validator.isAlphanumeric(username)) {
+          })) {
             try {
                 const userExists = await usersModel.getSingleUserByName(username);
                 logger.error("Invalid registration - username "+username+" already exists!");
