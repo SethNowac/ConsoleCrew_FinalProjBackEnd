@@ -196,7 +196,7 @@ async function updateNote(oldProjectId, newProjectId, oldId, newId, title, note)
             throw new InvalidInputError("Update note error: Project didn't exist or note data was invalid.");
         }
         else {
-            let checkExists = await getProjectCollection().updateOne({ id: oldId, projectId: oldProjectId }, { $set: { projectId: newProjectid, id: newId, title: title, note: note } });
+            let checkExists = await getNotesCollection().updateOne({ id: oldId, projectId: oldProjectId }, { $set: { projectId: newProjectid, id: newId, title: title, note: note } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update note: Successfully updated note with id: " + id);
                 return checkExists;
@@ -230,12 +230,12 @@ async function deleteNote(projectId, id) {
             logger.error("Delete note error: cannot pass in an empty parameter!");
             throw new InvalidInputError("Delete note error: cannot pass in an empty parameter!");
         }
-        else if(! await getProjectSingle(id)){
+        else if(! await getSingleNoteById(projectId, id)){
             logger.error("Delete note error: note matching "+id+" could not be found.");
             throw new InvalidInputError("Delete note error: note matching "+id+" could not be found.");
         }
         else {
-            let result = (await getProjectCollection().deleteOne({ id: id, projectId: projectId }));
+            let result = (await getNotesCollection().deleteOne({ id: id, projectId: projectId }));
             if (result.deletedCount > 0) {
                 logger.info("Delete note: Successfully deleted note matching id:" + id);
                 return true;
@@ -273,4 +273,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addNote, getAllNotesByProject, close, updateNote, deleteNote, getSingleNoteById }
+module.exports = { getClient, initialize, addNote, getAllNotesByProject, close, updateNote, deleteNote, getSingleNoteById, getNotesCollection }
