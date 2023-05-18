@@ -68,14 +68,6 @@ async function close() {
  */
 async function getAllProjects() {
     try {
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all projects");
-    
-        refreshSession(request, response);
 
         let resultArray;
         result = await getProjectCollection().find();
@@ -90,6 +82,34 @@ async function getAllProjects() {
     catch (err) {
         logger.error("Get all projects model error: " + err.message);
         throw new DatabaseError("Get all projects model error: " + err.message);
+    }
+}
+
+/**
+ * Gets a list of all data within the project collection of the database by the userId
+ * @returns An array with the list of items in the collection
+ * @throws {DatabaseError} If the database could not be read from or if there is nothing in the database
+ */
+async function getAllProjectsByUser(userId) {
+    try {
+        if(userId < 0){
+            logger.error("Get notes error: id must not be less than 0.");
+            throw new InvalidInputError("Get notes error: id must not be less than 0.");
+        }
+        let resultArray;
+        result = await getProjectCollection().find({userId: userId});
+        resultArray = await result.toArray();
+        logger.info("Get all projects model: successfully retrieved all projects")
+        return resultArray;
+    }
+    catch (err) {
+        logger.error("Get all projects model error: " + err.message);
+        if (err instanceof InvalidInputError) {
+            throw new InvalidInputError(err.message);
+        }
+        else {
+            throw new DatabaseError("Get all projects model error: " + err.message);
+        }
     }
 }
 
@@ -112,14 +132,6 @@ async function addProject(id, title, desc, catId, genre, userId) {
     }
     else {
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for add project");
-
-            refreshSession(request, response);
 
             let result = (await getProjectCollection().insertOne({ id: id, title: title, description: desc, categoryId: catId, genre: genre, userId: userId }));
 
@@ -148,22 +160,14 @@ async function addProject(id, title, desc, catId, genre, userId) {
  * @throws {DatabaseError} If the database could not be read from
  */
 async function getSingleProjectById(id) {
-    if (!id) {
-        logger.error("Get project error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Get project error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Get project error: id can't be less than 0!");
+        throw new InvalidInputError("Get project error: id can't be less than 0!");
     }
     else {
         let result = null;
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for get single project");
-
-            refreshSession(request, response);
-
+        
             result = await getProjectCollection().findOne({ id: id });
             if (result == null) {
                 logger.error("Get project error: id " + id + " was not found in database!");
@@ -200,23 +204,15 @@ async function getSingleProjectById(id) {
  * @throws {DatabaseError} If there was an issue updating the database
  */
 async function updateProject(id, newTitle, newDesc, newCatId, newGenre) {
-    if (!id) {
-        logger.error("Update project error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Update project error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Update project error: id can't be less than 0!");
+        throw new InvalidInputError("Update project error: id can't be less than 0!");
     } else if (!validateUtils.isUpdateProjectValid(id, newTitle, newDesc, newCatId, newGenre)) {
         logger.error("Update project error: one of the inputs was not valid!");
         throw new InvalidInputError("Update project error: one of the inputs was not valid!");
     }
     else {
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for update project");
-
-            refreshSession(request, response);
 
             let checkExists = await getProjectCollection().updateOne({ id: id }, { $set: { id: id, title: newTitle, description: newDesc, categoryId: newCatId, genre: newGenre } });
             if (checkExists.modifiedCount > 0) {
@@ -247,22 +243,13 @@ async function updateProject(id, newTitle, newDesc, newCatId, newGenre) {
  * @throws {DatabaseError} If there was an issue deleting the project from the database
  */
 async function deleteProject(id) {
-    if (!id) {
-        logger.error("Delete project error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Delete project error: id can't be less than 0!");
         throw new InvalidInputError("Delete project error: cannot pass in an empty parameter!");
     }
     else {
         let checkExists = null;
         try {
-
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete project");
-
-            refreshSession(request, response);
 
             checkExists = await getProjectSingle(id);
             let result = (await getProjectCollection().deleteOne({ id: id }));
@@ -305,4 +292,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById }
+module.exports = { getClient, initialize, addProject, getAllProjects, close, getProjectCollection, updateProject, deleteProject, getSingleProjectById, getAllProjectsByUser }

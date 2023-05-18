@@ -139,8 +139,8 @@ async function addCategory(id, name) {
  * @throws {DatabaseError} If the database could not be read from
  */
 async function getSingleCategoryById(id) {
-    if(!id) {
-        logger.error("Get category model error: cannot pass in an empty parameter!");
+    if(id < 0) {
+        logger.error("Get category model error: id can't be less than 0!");
         throw new InvalidInputError("Get category model error: cannot pass in an empty parameter!");
     }
     else {

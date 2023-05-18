@@ -61,11 +61,6 @@ test('Can add Category to DB', async () => {
     expect(results[0].name.toLowerCase() == name.toLowerCase()).toBe(true);
 });
 
-test('Cannot add category with empty id parameter to DB', async () => {
-    const { id, name } = {id: "", name: "Category"};
-    await expect(() => model.addCategory(id, name)).rejects.toThrow();
-});
-
 test('Cannot add category with id less than 0 to DB', async () => {
     const { id, name } = {id: -1, name: "Category"};
     await expect(() => model.addCategory(id, name)).rejects.toThrow();

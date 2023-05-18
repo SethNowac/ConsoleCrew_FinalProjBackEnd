@@ -23,7 +23,8 @@ async function loginUser(request, response) {
             // Save cookie that will expire.
             response.cookie("sessionId", sessionId, { expires: getSession(sessionId).expiresAt, httpOnly: true });
             response.cookie("userId", credentials.id, { expires: getSession(sessionId).expiresAt, httpOnly: true });
-            response.sendStatus(200); //Succeeded in logging in
+            response.send({id: credentials.id});
+            response.status(200); //Succeeded in logging in
             return; // Put this here to prevent two statuses from being sent
         } else {
             logger.error("Unsuccessful login: Invalid username / password for user: " + username);

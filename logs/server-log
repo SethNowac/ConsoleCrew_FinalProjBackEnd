@@ -1388,3 +1388,809 @@
 {"level":50,"time":1684356371362,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.cmo"}
 {"level":50,"time":1684372174724,"pid":25392,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac@gmail.com was not found in database!"}
 {"level":50,"time":1684372174725,"pid":25392,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1684373410657,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410704,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410726,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684373410744,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title  was not valid!"}
+{"level":50,"time":1684373410533,"pid":8008,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684373410560,"pid":8008,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684373410759,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684373410773,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410788,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684373410801,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410814,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684373410829,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410845,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684373410859,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410872,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410885,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410900,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684373410913,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410927,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373410940,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410951,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410962,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410974,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410986,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373410997,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373411009,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373411025,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684373411039,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684373411049,"pid":23028,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: request is not defined"}
+{"level":50,"time":1684373758676,"pid":24600,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684373758714,"pid":24600,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684373818170,"pid":19820,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684373818198,"pid":19820,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684382774744,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684382774745,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684382805431,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684382805432,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684382831057,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684382831058,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684383003831,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383003832,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383082750,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383085222,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383098677,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383099557,"pid":23096,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383280750,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383280751,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383280839,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280840,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280840,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684383280842,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280842,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280843,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280846,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280846,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280847,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684383280849,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280849,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280849,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684383280851,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280851,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280852,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280853,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280853,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280854,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684383280855,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280855,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280855,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.com"}
+{"level":50,"time":1684383280859,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280860,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280860,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280862,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280862,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280862,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280865,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280865,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280865,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280867,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280867,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280868,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383280870,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280871,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684383280871,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: this@this.com"}
+{"level":50,"time":1684383305336,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383305336,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383339444,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383339444,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383387574,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684383387574,"pid":27068,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: request is not defined"}
+{"level":50,"time":1684383519510,"pid":21016,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684383519511,"pid":21016,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: Get project error: cannot pass in an empty parameter!"}
+{"level":50,"time":1684383653769,"pid":26836,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: request is not defined"}
+{"level":50,"time":1684383653770,"pid":26836,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: Get project error: request is not defined"}
+{"level":50,"time":1684383729629,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684383729630,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684383754339,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684383754339,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684383908374,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684383908375,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684383950616,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684383950616,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684384055634,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684384055635,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684384086255,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684384086255,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684384747697,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684384747698,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684386173803,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684386173803,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684386196370,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684386196371,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684386292154,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684386292154,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684386363050,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684386363050,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684386448453,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: request is not defined"}
+{"level":50,"time":1684386448454,"pid":28532,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: request is not defined"}
+{"level":50,"time":1684388106242,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106243,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106244,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106252,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106253,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106254,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106258,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106258,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106258,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106261,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106262,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106262,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106265,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106265,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106266,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106268,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106269,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106269,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106271,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106272,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106272,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106274,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106275,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106275,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106277,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106278,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106279,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106281,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106282,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106282,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106342,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106342,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106343,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106349,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106349,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106350,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106352,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106352,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106352,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106354,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106354,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106355,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106356,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106356,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106357,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106358,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106359,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106360,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106361,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106362,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106362,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106364,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106364,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106364,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106366,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106366,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106366,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106368,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106368,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106368,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106370,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106370,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106370,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106372,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106372,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106373,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106375,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106375,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106376,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106378,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106379,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106379,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106382,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106383,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106383,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106385,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106386,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106386,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106388,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106388,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106389,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106391,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106391,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106391,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106393,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106394,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106394,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106396,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106397,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106397,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106399,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106399,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106400,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106402,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106402,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106403,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106405,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106405,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106405,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106407,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106407,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106408,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106410,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106410,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106411,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106414,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106414,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106415,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106417,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106418,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106419,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106422,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106422,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106422,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106425,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106425,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106426,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106428,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106428,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106429,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106431,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106431,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106432,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106434,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106435,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106435,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106439,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106439,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106439,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106442,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106442,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106443,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106445,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106446,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106446,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106448,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106448,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106449,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106451,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106451,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106451,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106453,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106453,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106454,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106455,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106455,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106456,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106457,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106457,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106458,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106460,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106460,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106460,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106462,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106462,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106462,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106464,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106464,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106465,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106466,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106467,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106467,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106469,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106469,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106469,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106471,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106471,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106471,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106473,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106473,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106474,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106475,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106475,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106476,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106477,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106478,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106478,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106480,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106481,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106481,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106483,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106483,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106484,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106485,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106486,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106486,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106488,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106488,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106488,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106489,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106490,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106490,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106491,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106492,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106492,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106499,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106499,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106500,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106501,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106501,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106502,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106503,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106504,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106504,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106506,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106506,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106506,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106507,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106508,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106508,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106510,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106510,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106510,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106513,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106513,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106514,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106516,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106517,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106517,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106519,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106519,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106520,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106521,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106522,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106522,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106528,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106528,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106528,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106537,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106537,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106538,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106539,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106539,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106539,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106541,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106541,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106541,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106543,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106543,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106544,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106546,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106546,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106547,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106548,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106549,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106549,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106551,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106551,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106552,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106553,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106554,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106554,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106556,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106557,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106557,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106558,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106559,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106559,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106561,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106561,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106562,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106563,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106563,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106564,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106569,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106569,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106570,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106571,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106571,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106572,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106573,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106573,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106574,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106575,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106576,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106576,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106578,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106578,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106579,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106580,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106581,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106581,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106583,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106583,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106584,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106585,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106586,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106586,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106587,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106587,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106588,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106589,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106590,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106590,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106592,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106592,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106593,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106595,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106595,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106596,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106598,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106599,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106599,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106605,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106605,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106606,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106610,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106610,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106611,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106614,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106615,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106615,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106618,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106618,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106619,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106621,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106622,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106622,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106625,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106625,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106626,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106628,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106629,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106629,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106631,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106631,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106631,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106633,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106633,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106634,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106638,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106639,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106640,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106642,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106642,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106642,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106645,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106646,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106646,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106649,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106650,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106650,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106652,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106653,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106654,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106655,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106655,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106656,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106657,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106658,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106659,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106660,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106661,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106662,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106664,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106664,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106665,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106667,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106667,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106668,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106669,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106670,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106670,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106672,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106672,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106673,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106674,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106675,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106675,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106677,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106678,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106679,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106681,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106681,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106682,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106684,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106684,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106685,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106687,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106687,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106687,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106689,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106690,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106691,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106692,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106693,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106694,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106697,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106698,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106698,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106700,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106700,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106701,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106706,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106706,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106707,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106708,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106709,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106709,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106712,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106713,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106713,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106716,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106716,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106716,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106718,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106719,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106719,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106723,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106723,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106724,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106730,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106730,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106730,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106735,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106735,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106736,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106740,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106740,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106741,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106748,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106749,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106749,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106756,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106757,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106757,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106765,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106766,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106766,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106768,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106768,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106769,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106770,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106770,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106771,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106773,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106774,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106774,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106786,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106786,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106787,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106804,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106805,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106805,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106816,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106817,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106818,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106819,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106820,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106821,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106822,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106823,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106823,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106827,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106827,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106828,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106831,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106831,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106832,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106837,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106837,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106837,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106841,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106842,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106844,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106847,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106848,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106849,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106853,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106854,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106854,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106856,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106856,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106857,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106858,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106860,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106861,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106870,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106871,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106871,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106875,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106875,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106876,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106879,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106880,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106880,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106883,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106884,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106884,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106886,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106887,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106887,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106889,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106890,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106890,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106892,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106892,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106893,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106895,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106896,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106897,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106898,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106899,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106899,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106901,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106902,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106902,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106904,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106905,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106906,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106909,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106910,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106911,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106916,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106917,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106917,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106919,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106920,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106921,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106922,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106923,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106924,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106925,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106926,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106926,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106928,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106929,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106929,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106931,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106931,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106932,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106934,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106935,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106936,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106937,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106938,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106938,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106940,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106941,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106941,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106943,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106943,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106944,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106950,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106950,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106951,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106954,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106954,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106955,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106956,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106958,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106959,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106961,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106962,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106962,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106964,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106965,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106965,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106973,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106973,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106974,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106978,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106979,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106979,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106987,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106988,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106988,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106991,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106992,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106993,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106995,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106996,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106997,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388106999,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107000,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107000,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107002,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107004,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107005,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107009,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107010,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107011,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107016,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107017,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107017,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107021,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107022,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107022,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107027,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107027,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107028,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107030,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107031,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107031,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107033,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107034,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107034,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107035,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107036,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107036,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107038,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107038,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107039,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107041,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107042,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107044,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107047,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107047,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107049,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107051,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107051,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107052,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107054,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107055,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107055,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107060,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107061,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107061,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107063,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107064,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107065,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107067,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107068,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107068,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107070,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107071,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107071,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107073,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107073,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107074,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107075,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107076,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107076,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107079,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107079,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107080,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107082,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107082,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107083,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107085,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107085,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107086,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107090,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107090,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107090,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107095,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107096,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107097,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107099,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107099,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107100,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107101,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107101,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107102,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107104,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107105,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107106,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107107,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107108,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107108,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107110,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107110,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388107111,"pid":8252,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684388545720,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388545721,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388545721,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388618946,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388618946,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388618946,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get project error: id user-projects was not found in database!"}
+{"level":50,"time":1684388669596,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id 3 was not found in database!"}
+{"level":50,"time":1684388669596,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id 3 was not found in database!"}
+{"level":50,"time":1684388669596,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get project error: id 3 was not found in database!"}
+{"level":50,"time":1684388713036,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684388713037,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684388713037,"pid":30424,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684389097339,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389111203,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389111204,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389114347,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389114347,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389116515,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389132867,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389162476,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389162477,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389162483,"pid":13072,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: Server selection timed out after 30000 ms"}
+{"level":50,"time":1684389356636,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389370347,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389377180,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1684389377194,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: connection timed out"}

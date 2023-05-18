@@ -8,7 +8,7 @@ function isTagValid(id, name) {
 }
 
 function isAddProjectValid(id, title, desc, catId, genre, userId) {
-    if(id < 0 || userId < 0 || !title || !desc || catId < 0 || genre < 0 || userId < 0) {
+    if(id < 0 || !title || !desc || catId < 0 || genre < 0 || userId < 0) {
         return false;
     }
     return true;

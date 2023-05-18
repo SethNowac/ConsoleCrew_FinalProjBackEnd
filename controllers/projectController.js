@@ -60,19 +60,57 @@ async function handleAddProject(request, response) {
  * @param {string} request parameter of name of the project to get
  * @param {string} response result on whether or not the project was successfully retrieved
  */
-router.get('/:id', handleGetSingleProject);
-async function handleGetSingleProject(request, response) {
+// router.get('/:id', handleGetSingleProject);
+// async function handleGetSingleProject(request, response) {
+//     try {
+//         let projectsObject = (await projectsModel.getSingleProjectById(request.params.id));
+//         if(projectsObject != null) {
+//             logger.info("Project controller | Project ["+projectsObject.title+"] was retrieved successfully!");
+//             response.status(200);
+//             response.send(projectsObject);
+//         }
+//         else {
+//             logger.error("Project controller | Failed to retrieve project ["+request.params.id+"]");
+//             response.status(400);
+//             response.send("Project controller | Failed to retrieve project ["+request.params.id+"]");
+//         }
+//     }
+//     catch(err) {
+//         logger.error("Project controller | Failed to get a single project: " + err.message)
+//         if(err instanceof DatabaseError) {
+//             response.status(500);
+//             response.send({errorMessage: "There was a system error: " + err.message});
+//         }
+//         else if(err instanceof InvalidInputError) {
+//             response.status(400);
+//             response.send({errorMessage: "There was a validation error: " + err.message});
+//         }
+//         else {
+//             response.status(500);
+//             response.send({errorMessage: "There was an unexpected error: " + err.message});
+//         }
+//     }
+// }
+
+/**
+ * Validates reading an existing project in the database with url parameters and sends a response back to the server
+ * on whether it succeeded or failed
+ * @param {string} request parameter of name of the project to get
+ * @param {string} response result on whether or not the project was successfully retrieved
+ */
+router.get('/:userId', handleGetProjectsByUserId);
+async function handleGetProjectsByUserId(request, response) {
     try {
-        let projectsObject = (await projectsModel.getSingleProjectById(request.params.id));
+        let projectsObject = (await projectsModel.getAllProjectsByUser(parseInt(request.params.userId)));
         if(projectsObject != null) {
-            logger.info("Project controller | Project ["+projectsObject.title+"] was retrieved successfully!");
+            logger.info("Project controller | Projects were retrieved successfully!");
             response.status(200);
             response.send(projectsObject);
         }
         else {
-            logger.error("Project controller | Failed to retrieve project ["+request.params.id+"]");
+            logger.error("Project controller | Failed to retrieve projects");
             response.status(400);
-            response.send("Project controller | Failed to retrieve project ["+request.params.id+"]");
+            response.send("Project controller | Failed to retrieve projects");
         }
     }
     catch(err) {
