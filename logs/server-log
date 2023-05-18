@@ -2194,3 +2194,129 @@
 {"level":50,"time":1684389370347,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
 {"level":50,"time":1684389377180,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
 {"level":50,"time":1684389377194,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: connection timed out"}
+{"level":50,"time":1684433842866,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get project error: id can't be less than 0!"}
+{"level":50,"time":1684433842867,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684433842867,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684433842956,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433842956,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433842970,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433842970,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433842996,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684433843010,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433843010,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433843021,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433843022,"pid":19372,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885203,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get project error: id can't be less than 0!"}
+{"level":50,"time":1684433885204,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684433885204,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684433885295,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885295,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885310,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885310,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885328,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: newProjectid is not defined"}
+{"level":50,"time":1684433885342,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684433885343,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684433885358,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885358,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885358,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885372,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885372,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684433885372,"pid":23524,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017652,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get project error: id can't be less than 0!"}
+{"level":50,"time":1684434017653,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684434017653,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684434017730,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017730,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017743,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017743,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017761,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434017775,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434017775,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434017789,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017789,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017789,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017803,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017803,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434017803,"pid":19528,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434085970,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get project error: id can't be less than 0!"}
+{"level":50,"time":1684434085970,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684434085970,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684434086045,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086045,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086058,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086058,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086077,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434086091,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434086091,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434086106,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086106,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086106,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086117,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086117,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434086117,"pid":19580,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146808,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434146808,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434146882,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146882,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146898,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146898,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146918,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434146935,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434146935,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434146953,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146953,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146953,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146968,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146968,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434146968,"pid":21668,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230770,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434230771,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434230848,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230848,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230861,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230861,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230877,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434230888,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434230888,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434230902,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230902,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230902,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230916,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230916,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434230916,"pid":10720,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324481,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434324481,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434324558,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324558,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324572,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324572,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324588,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434324599,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434324599,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434324614,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324614,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324614,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324626,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324626,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434324626,"pid":22140,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434789663,"pid":5836,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434789663,"pid":5836,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434948284,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434948285,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684434948390,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948390,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948409,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948410,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948432,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684434948453,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434948453,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684434948473,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948473,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948473,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948491,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948491,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684434948491,"pid":21756,"hostname":"DESKTOP-TLF6SPP","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684435068027,"pid":19164,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Client must be connected before running operations"}
+{"level":50,"time":1684435111685,"pid":19164,"hostname":"DESKTOP-TLF6SPP","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684435116744,"pid":19164,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684435135312,"pid":19164,"hostname":"DESKTOP-TLF6SPP","msg":"Get single note model error: Client must be connected before running operations"}

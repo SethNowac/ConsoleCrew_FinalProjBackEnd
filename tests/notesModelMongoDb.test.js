@@ -56,7 +56,7 @@ test("Add Note Success", async () => {
 });
 
 test("Add Note Failure", async () => {
-    await expect(() => notesModel.addNote(-1,-1,"","")).toThrow();
+    await expect(() => notesModel.addNote()).toThrow();
 });
 
 test("Get All Notes By Project Success", async () => {
