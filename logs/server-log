@@ -2194,3 +2194,18 @@
 {"level":50,"time":1684389370347,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Error with connection to database: Unable to register collection!"}
 {"level":50,"time":1684389377180,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get a single project: Get all projects model error: Error with connection to database: Unable to register collection!"}
 {"level":50,"time":1684389377194,"pid":21576,"hostname":"DESKTOP-BBDALJM","msg":"Initialize error: connection timed out"}
+{"level":50,"time":1684438945145,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684438945146,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684438974969,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684438974969,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684438999443,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684438999444,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684439010773,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684439010774,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684439104264,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684439111711,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684439290383,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"request is not defined"}
+{"level":50,"time":1684439292464,"pid":22928,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to add a tasklog: request is not defined"}
+{"level":50,"time":1684439700977,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684439700978,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684439700978,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
