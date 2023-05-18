@@ -196,7 +196,7 @@ async function updateNote(oldProjectId, newProjectId, oldId, newId, title, note)
             throw new InvalidInputError("Update note error: Project didn't exist or note data was invalid.");
         }
         else {
-            let checkExists = await getNotesCollection().updateOne({ id: oldId, projectId: oldProjectId }, { $set: { projectId: newProjectid, id: newId, title: title, note: note } });
+            let checkExists = await getNotesCollection().updateOne({ id: oldId, projectId: oldProjectId }, { $set: { projectId: newProjectId, id: newId, title: title, note: note } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update note: Successfully updated note with id: " + id);
                 return checkExists;
@@ -205,7 +205,7 @@ async function updateNote(oldProjectId, newProjectId, oldId, newId, title, note)
                 throw new InvalidInputError("Update note error: Note was not updated");
             }
         }
-    } catch (error) {
+    } catch (err) {
         logger.error("Update note error: " + err.message);
             if (err instanceof InvalidInputError) {
                 throw new InvalidInputError(err.message);
@@ -244,7 +244,7 @@ async function deleteNote(projectId, id) {
                 throw new DatabaseError("Unexpected error occured. Unable to delete from database.");
             }
         }
-    } catch (error) {
+    } catch (err) {
         logger.error("Delete note error: " + err.message);
         if (err instanceof InvalidInputError) {
             throw new InvalidInputError("Delete note error: " + err.message);
