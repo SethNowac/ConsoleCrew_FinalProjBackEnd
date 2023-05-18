@@ -4,8 +4,7 @@ jest.setTimeout(5000);
 const notesDb = "Test_NotesDb";
 const projectDb = "Test_ProjectDb";
 
-let mongodbNotes;
-let mongodbProject;
+let mongodb;
 
 const notesModel = require("../models/notesModelMongoDb");
 const projectModel = require("../models/projectModelMongoDb");
@@ -17,21 +16,17 @@ const res = require('express/lib/response');
 
 
 beforeAll(async () => {
-    mongodbNotes = await MongoMemoryServer.create();
-    console.log("Mock Notes Database Started");
-
-    mongodbProject = await MongoMemoryServer.create();
-    console.log("Mock Project Database Started")
+    mongodb = await MongoMemoryServer.create();
+    console.log("Mock Server Started");
 });
 
 beforeEach(async () => {
-    const notesUri = mongodbNotes.getUri();
-    const projectUri = mongodbProject.getUri();
+    const notesUri = mongodb.getUri();
+    const projectUri = mongodb.getUri();
     try {
         await notesModel.initialize(notesDb, true, notesUri);
-        await projectModel.initialize(projectDb, true, projectUri)
+        await projectModel.initialize(projectDb, true, projectUri);
 
-        // This will fail because no cookies or users exist
         await projectModel.addProject(1, "testProject", "testing project", 1, 1, 1);
 
     } catch (error) {
@@ -45,11 +40,8 @@ afterEach(async() => {
 });
 
 afterAll(async () => {
-    await mongodbNotes.stop();
+    await mongodb.stop();
     console.log("Mock Notes Database Stopped");
-
-    await mongodbProject.stop();
-    console.log("Mock Project Database Stopped");
 });
 
 // Tests
