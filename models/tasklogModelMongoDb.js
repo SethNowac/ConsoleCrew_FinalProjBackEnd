@@ -68,15 +68,7 @@ async function close() {
  */
 async function getAllTasklogs() {
     try {
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all tasklogs");
-
-        refreshSession(request, response);
-
+       
         let resultArray;
         result = await getTasklogCollection().find();
         resultArray = await result.toArray();
@@ -109,15 +101,6 @@ async function addTasklog(id, issue, projectId) {
     }
     else {
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for add tasklog");
-
-            refreshSession(request, response);
-
             let result = (await getTasklogCollection().insertOne({ id: id, issue: issue, isResolved: false, notes: "", projectId: projectId }));
 
             if (result.acknowledged) {
@@ -145,22 +128,13 @@ async function addTasklog(id, issue, projectId) {
  * @throws {DatabaseError} If the database could not be read from
  */
 async function getSingleTasklogById(id) {
-    if (!id) {
-        logger.error("Get tasklog model error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Get tasklog model error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Get tasklog model error: id cannot be less than 0!");
+        throw new InvalidInputError("Get tasklog model error: id cannot be less than 0!");
     }
     else {
         let result = null;
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for get single tasklog");
-
-            refreshSession(request, response);
-
             result = await getTasklogCollection().findOne({ id: id });
             if (result == null) {
                 logger.error("Get tasklog model error: id " + id + " was not found in database!");
@@ -195,24 +169,16 @@ async function getSingleTasklogById(id) {
  * @throws {DatabaseError} If there was an issue updating the database
  */
 async function updateTasklog(id, newIssue, isResolved, newNotes) {
-    if (!id) {
-        logger.error("Update tasklog model error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Update tasklog model error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Update tasklog model error: id must not be less than 0!");
+        throw new InvalidInputError("Update tasklog model error: id must not be less than 0!");
     } else if (!validateUtils.isUpdateTasklogValid(id, newIssue, isResolved)) {
         logger.error("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
         throw new InvalidInputError("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
     }
     else {
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for update tasklog");
-
-            refreshSession(request, response);
-
+            
             let checkExists = await getTasklogCollection().updateOne({ id: id }, { $set: { issue: newIssue, isResolved: isResolved, notes: newNotes } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update tasklog model: Successfully updated tasklog with id: " + id);
@@ -242,22 +208,14 @@ async function updateTasklog(id, newIssue, isResolved, newNotes) {
  * @throws {DatabaseError} If there was an issue deleting the tasklog from the database
  */
 async function deleteTasklog(id) {
-    if (!id) {
-        logger.error("Delete tasklog model error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Delete tasklog model error: cannot pass in an empty parameter!");
+    if (id < 0) {
+        logger.error("Delete tasklog model error: id must not be less than 0!");
+        throw new InvalidInputError("Delete tasklog model error: id must not be less than 0!");
     }
     else {
         let checkExists = null;
         try {
-            const authenticatedSession = authenticateUser(request);
-            if (!authenticatedSession) {
-                response.sendStatus(401); // Unauthorized access
-                return;
-            }
-            logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete tasklog");
-
-            refreshSession(request, response);
-
+           
             checkExists = await getTasklogSingle(id);
             let result = (await getTasklogCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {

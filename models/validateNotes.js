@@ -8,7 +8,7 @@ async function isValid(projectid, id, title, note) {
         if(!result)
             return false;
 
-        if(title == "" || note == "") // Maybe add some more robust validation here
+        if(!title || !note || projectid < 0 || id < 0) // Maybe add some more robust validation here
             return false;
 
         return true;

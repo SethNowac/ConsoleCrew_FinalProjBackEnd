@@ -176,14 +176,14 @@ async function getSingleCategoryById(id) {
  * @throws {DatabaseError} If there was an issue deleting the category from the database
  */
 async function deleteCategory(id) {
-    if(!id) {
-        logger.error("Delete category model error: cannot pass in an empty parameter!");
-        throw new InvalidInputError("Delete category model error: cannot pass in an empty parameter!");
+    if(id < 0) {
+        logger.error("Delete category model error: id cannot be less than 0!");
+        throw new InvalidInputError("Delete category model error: id cannot be less than 0!");
     }
     else {
         let checkExists = null;
         try{
-            checkExists = await getCategorySingle(id);
+            checkExists = await getSingleCategoryById(id);
             let result = (await getCategoryCollection().deleteOne({id: id}));
             if(result.deletedCount > 0) {
                 logger.info("Delete category model: Successfully deleted " + id);

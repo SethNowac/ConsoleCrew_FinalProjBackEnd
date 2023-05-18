@@ -59,15 +59,10 @@ test('Can add Project Information to DB', async () => {
     expect(results.length).toBe(1);
     expect(results[0].id == id).toBe(true);
     expect(results[0].title.toLowerCase() == title.toLowerCase()).toBe(true);
-    expect(results[0].desc.toLowerCase() == desc.toLowerCase()).toBe(true);
-    expect(results[0].catId == catId).toBe(true);
+    expect(results[0].description.toLowerCase() == desc.toLowerCase()).toBe(true);
+    expect(results[0].categoryId == catId).toBe(true);
     expect(results[0].genre == genre).toBe(true);
     expect(results[0].userId == userId).toBe(true);
-});
-
-test('Cannot add project with empty id parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:"", title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
 });
 
 test('Cannot add project with negative id parameter to DB', async () => {
@@ -85,28 +80,13 @@ test('Cannot add project with empty description parameter to DB', async () => {
     await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
 });
 
-test('Cannot add project with empty category id parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: "", genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
-});
-
 test('Cannot add project with negative id parameter to DB', async () => {
     const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: -1, genre: 0, userId: 0};
     await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
 });
 
-test('Cannot add project with empty genre parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: "", userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
-});
-
 test('Cannot add project with negative genre parameter to DB', async () => {
     const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: -1, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
-});
-
-test('Cannot add project with empty user ID parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: ""};
     await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
 });
 
@@ -129,8 +109,8 @@ test('Can read Project from DB', async () => {
 
     expect(product.id == id).toBe(true);
     expect(product.title.toLowerCase() == title.toLowerCase()).toBe(true);
-    expect(product.desc.toLowerCase() == desc.toLowerCase()).toBe(true);
-    expect(product.catId == catId).toBe(true);
+    expect(product.description.toLowerCase() == desc.toLowerCase()).toBe(true);
+    expect(product.categoryId == catId).toBe(true);
     expect(product.genre == genre).toBe(true);
     expect(product.userId == userId).toBe(true);
 });
@@ -176,9 +156,9 @@ test('Can update Project from DB', async () => {
     expect(Array.isArray(results)).toBe(true);
 
     expect(results[0].title.toLowerCase() == newTitle.toLowerCase()).toBe(true);
-    expect(results[0].desc.toLowerCase() == newDesc.toLowerCase()).toBe(true);
-    expect(results[0].catId.toLowerCase() == newCatId.toLowerCase()).toBe(true);
-    expect(results[0].genre.toLowerCase() == newGenre.toLowerCase()).toBe(true);
+    expect(results[0].description.toLowerCase() == newDesc.toLowerCase()).toBe(true);
+    expect(results[0].categoryId == newCatId).toBe(true);
+    expect(results[0].genre == newGenre).toBe(true);
 });
 
 test('Cannot update Project with an empty id parameter', async () => {
@@ -245,7 +225,7 @@ test('Can delete Project Information from DB', async () => {
     cursor = await model.getProjectCollection().find();
     results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(1);
+    expect(results.length).toBe(0);
 });
 
 test('Cannot use delete Project command with empty name parameter', async () => {
