@@ -16,7 +16,8 @@ const cors = require("cors");
 const controllers = ['homeController', 'categoryController', 'notesController', 'projectController', 'sessionController',
     'storyboardController', 'tagsController', 'tasklogController', 'userController', 'errorController']
 
-app.use(cors());
+app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+
 app.use(express.json());
 
 // Configuring body parser middleware

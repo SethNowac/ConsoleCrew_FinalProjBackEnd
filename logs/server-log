@@ -1386,3 +1386,5 @@
 {"level":50,"time":1684356371361,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name james@gmail.cmo was not found in database!"}
 {"level":50,"time":1684356371362,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id james@gmail.cmo was not found in database!"}
 {"level":50,"time":1684356371362,"pid":4124,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: james@gmail.cmo"}
+{"level":50,"time":1684372174724,"pid":25392,"hostname":"DESKTOP-BBDALJM","msg":"Get user model error: name sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1684372174725,"pid":25392,"hostname":"DESKTOP-BBDALJM","msg":"Get single user model error: Get user model error: id sethnowac@gmail.com was not found in database!"}

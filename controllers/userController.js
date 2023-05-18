@@ -233,6 +233,7 @@ async function registerUser(request, response) {
                 await usersModel.addUser(results.length, username, hashedPassword);
                 logger.info("Successfully registered username " + username);
                 response.send({success: true});
+                response.status(200);
                 return;
             }
         } else {
@@ -242,6 +243,7 @@ async function registerUser(request, response) {
         logger.error(error.message);
     }
     response.send({success: false});
+    response.status(401);
 }
 
 /** Returns true if there is a stored user with the same username and password. */
