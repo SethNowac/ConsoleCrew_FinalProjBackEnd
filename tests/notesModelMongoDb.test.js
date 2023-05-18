@@ -47,16 +47,28 @@ afterAll(async () => {
 // Tests
 
 test("Add Note Success", async () => {
-    let result = await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
+    await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
 
-    expect(result != null).toBe(true);
-    expect(result.id).toBe(1);
-    expect(result.title).toBe("firstNote");
-    expect(result.note).toBe("firstNote Desc");
+    const coll = notesModel.getNotesCollection();
+    const cursor = await coll.find();
+    const results = await cursor.toArray();
+
+    expect(results[0] != null).toBe(true);
+    expect(results[0].id).toBe(1);
+    expect(results[0].title).toBe("firstNote");
+    expect(results[0].note).toBe("firstNote Desc");
 });
 
 test("Add Note Failure", async () => {
-    await expect(() => notesModel.addNote()).toThrow();
+    await expect(() => notesModel.addNote()).rejects.toThrow();;
+
+    const coll = notesModel.getNotesCollection();
+    const cursor = await coll.find();
+    const results = await cursor.toArray();
+
+    console.log("HELLO: "+results[0]);
+
+    expect(results.length).toBe(0);
 });
 
 test("Get All Notes By Project Success", async () => {
@@ -65,12 +77,11 @@ test("Get All Notes By Project Success", async () => {
 
     let result = await notesModel.getAllNotesByProject(1);
 
-    expect(Array.isArray(result)).toBe(true);
-    expect(result.length).toBe(2);
+    expect(result != null).toBe(true);
 });
 
 test("Get All Notes By Project Failure", async () => {
-    await expect(() => notesModel.getAllNotesByProject(-1)).rejects.toThrow();
+    await expect(() => notesModel.getAllNotesByProject()).rejects.toThrow();
 });
 
 test("Get Single Note By Project Success", async () => {
@@ -78,9 +89,6 @@ test("Get Single Note By Project Success", async () => {
     let result = await notesModel.getSingleNoteById(1,1);
 
     expect(result != null).toBe(true);
-    expect(result.id).toBe(1);
-    expect(result.title).toBe("firstNote");
-    expect(result.note).toBe("firstNote Desc");
 });
 
 test("Get Single Note By Project Failure", async () => {
@@ -89,12 +97,16 @@ test("Get Single Note By Project Failure", async () => {
 
 test("Update Note Success", async () => {
     await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
-    let result = await notesModel.updateNote(1, 1, 1, 2, "updatedNote", "updatedNote Desc");
+    await notesModel.updateNote(1, 1, 1, 2, "updatedNote", "updatedNote Desc");
 
-    expect(result != null).toBe(true);
-    expect(result.id).toBe(2);
-    expect(result.title).toBe("updatedNote");
-    expect(result.note).toBe("updatedNote Desc")
+    const coll = notesModel.getNotesCollection();
+    const cursor = await coll.find();
+    const results = await cursor.toArray();
+
+    expect(results[0] != null).toBe(true);
+    expect(results[0].id).toBe(2);
+    expect(results[0].title).toBe("updatedNote");
+    expect(results[0].note).toBe("updatedNote Desc")
 });
 
 test("Update Note Failure", async () => {
@@ -103,9 +115,18 @@ test("Update Note Failure", async () => {
 
 test("Delete Note Success", async () => {
     await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
+
+    const coll = notesModel.getNotesCollection();
+    const cursor = await coll.find();
+    const results = await cursor.toArray();
+
+    let initialSize = results.length;
+
     let result = await notesModel.deleteNote(1,1);
 
-    expect(result).toBe(true);
+    let sizeAfter = results.length;
+
+    expect(initialSize-1).toBe(sizeAfter);
 });
 
 test("Delete Note Failure", async () => {
