@@ -60,6 +60,8 @@ test("Add Note Failure", async () => {
 });
 
 test("Get All Notes By Project Success", async () => {
+    await projectModel.addProject(1, "project", "description", 0, 0, 0);
+
     await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
     await notesModel.addNote(1, 2, "secondNote", "secondNote Desc");
 

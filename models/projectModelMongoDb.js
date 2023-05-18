@@ -251,7 +251,7 @@ async function deleteProject(id) {
         let checkExists = null;
         try {
 
-            checkExists = await getProjectSingle(id);
+            checkExists = await getSingleProjectById(id);
             let result = (await getProjectCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {
                 logger.info("Delete project: Successfully deleted " + id);

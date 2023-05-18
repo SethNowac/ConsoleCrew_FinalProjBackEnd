@@ -69,9 +69,9 @@ async function close() {
  */
 async function getAllNotesByProject(projectId) {
     try {
-        if(!projectId){
-            logger.error("Get notes error: cannot pass empty projectId parameter.");
-            throw new InvalidInputError("Get notes error: cannot pass empty projectId parameter.");
+        if(projectId < 0){
+            logger.error("Get notes error: project id cannot be less than 0.");
+            throw new InvalidInputError("Get notes error: project id cannot be less than 0.");
         }
 
         result = await getNotesCollection().find({ projectId: projectId });
@@ -143,11 +143,7 @@ async function getSingleNoteById(projectId, id) {
  */
 async function addNote(projectid, id, title, note) {
     try {
-        if(!projectid || !id){
-            logger.error("Add note error: ProjectId or ID cannot be empty.");
-            throw new InvalidInputError("Add note error: ProjectId or ID cannot be empty.");
-        }    
-        else if (! await validateNotes.isValid(projectid, id, title, note)) {
+        if(!await validateNotes.isValid(projectid, id, title, note)) {
             logger.error("Add note error: Project didn't exist or note contained empty data.");
             throw new InvalidInputError("Add note error: Project didn't exist or note contained empty data.");
         }

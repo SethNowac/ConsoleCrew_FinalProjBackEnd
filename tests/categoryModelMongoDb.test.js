@@ -50,15 +50,15 @@ afterAll(async () => {
 ////////////////////////////////////////
 // TESTS FOR ADD CATEGORY INFORMATION //
 test('Can add Category to DB', async () => {
-    const { id, name } = {id: 0, name: "Category"};
+    const { id, name } = {id: 4, name: "Category"};
     await model.addCategory(id, name);
 
     const cursor = await model.getCategoryCollection().find();
     const results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
-    expect(results.length).toBe(1);
-    expect(results[0].id == id).toBe(true);
-    expect(results[0].name.toLowerCase() == name.toLowerCase()).toBe(true);
+    expect(results.length).toBe(4);
+    expect(results[3].id == id).toBe(true);
+    expect(results[3].name.toLowerCase() == name.toLowerCase()).toBe(true);
 });
 
 test('Cannot add category with id less than 0 to DB', async () => {
@@ -75,7 +75,7 @@ test('Cannot add category with empty name parameter to DB', async () => {
 /////////////////////////////////////
 // TESTS FOR READ CATEGORY INFORMATION //
 test('Can read Category from DB', async () => {
-    const { id, name } = {id: 0, name: "Category"};
+    const { id, name } = {id: 4, name: "Category"};
     await model.addCategory(id, name);
     const cursor = await model.getCategoryCollection().find();
     const results = await cursor.toArray();
@@ -92,18 +92,21 @@ test('Cannot read Category with empty name parameter from DB', async () => {
 });
 
 test('Cannot read Category with name that doesnt exist from DB', async () => {
-    await expect(() => model.getSingleCategoryById(0)).rejects.toThrow();
+    await expect(() => model.getSingleCategoryById(4)).rejects.toThrow();
 });
 
 ///////////////////////////////////////
 // TEST FOR GET ALL CATEGORY INFORMATION //
 test('Reading all Category should throw error if empty', async () => {
+    await model.deleteCategory(0);
+    await model.deleteCategory(2);
+    await model.deleteCategory(1);
     await expect(() => model.getAllCategories()).rejects.toThrow();
 });
 
 test('Reading all Category should return a list of items from DB', async () => {
-    await model.addCategory(0, "CategoryA");
-    await model.addCategory(1, "CategoryB");
+    await model.addCategory(4, "CategoryA");
+    await model.addCategory(5, "CategoryB");
 
     const cursor = await model.getCategoryCollection().find();
     const results = await cursor.toArray();
@@ -111,5 +114,5 @@ test('Reading all Category should return a list of items from DB', async () => {
     
     const product = await model.getAllCategories();
 
-    expect(product.length == 2).toBe(true);
+    expect(product.length == 5).toBe(true);
 });

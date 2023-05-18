@@ -2209,3 +2209,139 @@
 {"level":50,"time":1684439700977,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684439700978,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684439700978,"pid":23124,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684441955398,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684441955432,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684441955494,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684441955494,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684441955518,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684441955518,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684441955547,"pid":25024,"hostname":"DESKTOP-BBDALJM","msg":"Delete category model error: getCategorySingle is not defined"}
+{"level":50,"time":1684442037006,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684442037054,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684442037139,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442037139,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442037159,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442037159,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442037193,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442037193,"pid":21008,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442037368,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684442037369,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Add note error: ProjectId or ID cannot be empty."}
+{"level":50,"time":1684442037485,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037485,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037515,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037515,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037547,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684442037572,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684442037573,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684442037600,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037601,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037601,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037621,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037622,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442037622,"pid":9556,"hostname":"DESKTOP-BBDALJM","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684442297182,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684442297278,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684442297376,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442297376,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442297405,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442297405,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442297460,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442297460,"pid":25996,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442553567,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684442553610,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684442553660,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442553660,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442553680,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442553680,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442553714,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442553714,"pid":12144,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442553990,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684442576392,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title  was not valid!"}
+{"level":50,"time":1684442576420,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684442576450,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684442576482,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684442576513,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684442576543,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id  was not found in database!"}
+{"level":50,"time":1684442576543,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id  was not found in database!"}
+{"level":50,"time":1684442576558,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684442576558,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684442576573,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442576574,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442576622,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id  was not found in database!"}
+{"level":50,"time":1684442576635,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684442576647,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684442576659,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id 0 was not found in database!"}
+{"level":50,"time":1684442576670,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id 0 was not found in database!"}
+{"level":50,"time":1684442576681,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684442576692,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684442576705,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: getProjectSingle is not defined"}
+{"level":50,"time":1684442576716,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: getProjectSingle is not defined"}
+{"level":50,"time":1684442576729,"pid":17040,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: getProjectSingle is not defined"}
+{"level":50,"time":1684442839481,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684442839543,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684442839584,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442839584,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442839598,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442839598,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442839617,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442839617,"pid":21148,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442907644,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684442907691,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684442907841,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442907841,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684442907852,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442907852,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684442907896,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684442907896,"pid":3344,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684443023768,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name Category was not valid!"}
+{"level":50,"time":1684443023795,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Add category model error: id or category name  was not valid!"}
+{"level":50,"time":1684443023827,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id  was not found in database!"}
+{"level":50,"time":1684443023827,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id  was not found in database!"}
+{"level":50,"time":1684443023860,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684443023860,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get single category model error: Get category model error: id 4 was not found in database!"}
+{"level":50,"time":1684443023886,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684443023886,"pid":12468,"hostname":"DESKTOP-BBDALJM","msg":"Get all categories model error: Get all categories model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684443024272,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684443024309,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title  was not valid!"}
+{"level":50,"time":1684443024323,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684443024337,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684443024350,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684443024368,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title project was not valid!"}
+{"level":50,"time":1684443024402,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id  was not found in database!"}
+{"level":50,"time":1684443024403,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id  was not found in database!"}
+{"level":50,"time":1684443024416,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684443024416,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id 0 was not found in database!"}
+{"level":50,"time":1684443024430,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684443024430,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684443024470,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id  was not found in database!"}
+{"level":50,"time":1684443024482,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684443024495,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684443024507,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id 0 was not found in database!"}
+{"level":50,"time":1684443024521,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: Update project error: id 0 was not found in database!"}
+{"level":50,"time":1684443024534,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684443024545,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Update project error: one of the inputs was not valid!"}
+{"level":50,"time":1684443024577,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id  was not found in database!"}
+{"level":50,"time":1684443024577,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id  was not found in database!"}
+{"level":50,"time":1684443024577,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: Get project error: id  was not found in database!"}
+{"level":50,"time":1684443024588,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id non-existant name was not found in database!"}
+{"level":50,"time":1684443024588,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id non-existant name was not found in database!"}
+{"level":50,"time":1684443024588,"pid":17080,"hostname":"DESKTOP-BBDALJM","msg":"Delete project error: Get project error: id non-existant name was not found in database!"}
+{"level":50,"time":1684443024275,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get project error: id undefined was not found in database!"}
+{"level":50,"time":1684443024276,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single project error: Get project error: id undefined was not found in database!"}
+{"level":50,"time":1684443024276,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684443024276,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Add note error: Project didn't exist or note contained empty data."}
+{"level":50,"time":1684443033305,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get notes error: project id cannot be less than 0."}
+{"level":50,"time":1684443033305,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get all notes model error: Get notes error: project id cannot be less than 0."}
+{"level":50,"time":1684443033333,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033333,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033354,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033354,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: -1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033384,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: Update note error: Note was not updated"}
+{"level":50,"time":1684443033403,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684443033403,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Update note error: Update note error: cannot pass an empty id parameter."}
+{"level":50,"time":1684443033426,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033426,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033426,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033445,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033445,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Get single note model error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
+{"level":50,"time":1684443033445,"pid":12220,"hostname":"DESKTOP-BBDALJM","msg":"Delete note error: Get note error: Note matching id: 1 and projectId: 1 does not exist."}
