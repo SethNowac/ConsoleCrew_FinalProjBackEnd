@@ -16,6 +16,13 @@ let requestJson;
 
 
 router.get('/:id/notes/:noteId', handleGetSingleNote);
+/**
+ * Authenticates user that requested query and returns note matching a projectId and noteId. Sends status of 200 if successful,
+ * 400 if note was not found or ids were invalid and 500 if there was a database error.
+ * @param {*} request Must contain a projectId and noteId. 
+ * @param {*} response The found note if successful, error message otherwise.
+ * @returns 
+ */
 async function handleGetSingleNote(request, response){  
     try {
         const authenticatedSession = authenticateUser(request);
@@ -57,6 +64,13 @@ async function handleGetSingleNote(request, response){
 
 
 router.get('/:id/notes', handleGetAllNotesByProject);
+/**
+ * Returns all notes matching a specified project id. Sends status of 200 if successful,
+ * 400 if projectId was invalid and 500 if there was a database error.
+ * @param {*} request Must contain valid projectId. 
+ * @param {*} response The array containing all notes matching the projectId.
+ * @returns Array containing all notes matching projectId. Empty array if none were found.
+ */
 async function handleGetAllNotesByProject(request, response){
     try {
         const authenticatedSession = authenticateUser(request);
@@ -98,6 +112,13 @@ async function handleGetAllNotesByProject(request, response){
 
 
 router.post('/:id/notes', handleAddNote);
+/**
+ * Creates a new note referencing the projectId provided in the url. Sends status of 200 if successful,
+ * 400 if note couldn't be created or data was invalid and 500 if there was a database error or unknown error.
+ * @param {*} request Must contain note id, title and note contained in Json and projectId in request.params.
+ * @param {*} response The newly created note if successful, error message otherwise.
+ * @returns The newly created note or error message.
+ */
 async function handleAddNote(request, response) {
     requestJson = request.body;
     try {
@@ -140,6 +161,13 @@ async function handleAddNote(request, response) {
 
 
 router.put('/:id/notes', handleUpdateNote);
+/**
+ * Updates a note matching a note id and project id. Sends status of 200 if successful,
+ * 400 if note was not found or ids were invalid or data was invalid and 500 if there was a database error.
+ * @param {*} request Must contain old projectId in params and new projectId, old id, new id, new title and new note in json.
+ * @param {*} response The newly updated note or error message.
+ * @returns The newly updated note or error message.
+ */
 async function handleUpdateNote(request, response){
     requestJson = request.body;
     try {
@@ -177,6 +205,13 @@ async function handleUpdateNote(request, response){
 
 
 router.delete('/:id/notes/:noteId', handleDeleteNote);
+/**
+ * Deletes a note matching a project id and a note id. Sends status of 200 if successful,
+ * 400 if note was not found or ids were invalid and 500 if there was a database error.
+ * @param {*} request Must contain note id and project id in request.params.
+ * @param {*} response True if item was deleted, error message otherwise.
+ * @returns True is successful, error message otherwise.
+ */
 async function handleDeleteNote(request, response){
     try {
         const authenticatedSession = authenticateUser(request);
