@@ -12,11 +12,11 @@ const tagsModel = require("./models/tagsModelMongoDb");
 const tasklogModel = require("./models/tasklogModelMongoDb");
 const usersModel = require("./models/userModelMongoDb");
 
-categoryModel.initialize("GameOrganizerDB", false, url)
+categoryModel.initialize("GameOrganizerDB", true, url)
 .then(notesModel.initialize("GameOrganizerDB", false, url))
 .then(projectModel.initialize("GameOrganizerDB", false, url))
 .then(storyboardModel.initialize("GameOrganizerDB", false, url))
-.then(tagsModel.initialize("GameOrganizerDB", false, url))
+.then(tagsModel.initialize("GameOrganizerDB", true, url))
 .then(tasklogModel.initialize("GameOrganizerDB", false, url))
 .then(usersModel.initialize("GameOrganizerDB", false, url))
 .then(app.listen(port));

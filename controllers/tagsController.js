@@ -23,7 +23,7 @@ let requestJson;
 router.get('/:id', handleGetSingleTag);
 async function handleGetSingleTag(request, response) {
     try {
-        let tagObject = (await tagModelMongoDb.getTagSingle(request.params.id));
+        let tagObject = (await tagModelMongoDb.getSingleTagById(request.params.id));
         if(tagObject != null) {
             logger.info("Tag controller | Tag ["+tagObject.id+"] was retrieved successfully!");
             response.status(200);
@@ -61,7 +61,7 @@ async function handleGetSingleTag(request, response) {
 router.get('/', handleGetAllTags);
 async function handleGetAllTags(request, response) {
     try {
-        let tagObject = (await tagModelMongoDb.getAllTag());
+        let tagObject = (await tagModelMongoDb.getAllTags());
         if(tagObject != null) {
             logger.info("Tag controller | Retrieved successfully!");
             response.status(200);

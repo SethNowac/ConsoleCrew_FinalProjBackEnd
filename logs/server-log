@@ -3052,3 +3052,29 @@
 {"level":50,"time":1684483960094,"pid":33500,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684483960094,"pid":33500,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684483960094,"pid":33500,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684489442999,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489443000,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489443000,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489443035,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489443035,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489443035,"pid":32932,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460871,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460871,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460871,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460925,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460925,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489460925,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489484900,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489484900,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489484900,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489496481,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489496481,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Get single tag model error: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684489496481,"pid":29292,"hostname":"DESKTOP-BBDALJM","msg":"Tag controller | Failed to get a single tag: Get tag model error: id 1 was not found in database!"}
+{"level":50,"time":1684491771513,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Add project error: project with title new task was not valid!"}
+{"level":50,"time":1684491771515,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to add a project: Add project error: project with title new task was not valid!"}
+{"level":50,"time":1684492281116,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684492281116,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684492281116,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684492405487,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684492405488,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684492405488,"pid":9924,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}

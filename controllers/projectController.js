@@ -24,7 +24,7 @@ router.post('/', handleAddProject);
 async function handleAddProject(request, response) {
     requestJson = request.body;
     try {
-        const added = await projectsModel.addProject(requestJson.id, requestJson.title, requestJson.desc, requestJson.catId, requestJson.genre, requestJson.userId);
+        const added = await projectsModel.addProject(requestJson.id, requestJson.title, requestJson.desc, requestJson.tag, requestJson.userId);
         if(added.acknowledged) {
             logger.info("Project ["+requestJson.title+"] of description ["+requestJson.desc+"] was added successfully!");
             response.status(200);
@@ -174,7 +174,7 @@ router.put('/', handleUpdateProject);
 async function handleUpdateProject(request, response) {
     requestJson = request.body;
     try{
-        const result = await projectsModel.updateProject(requestJson.id, requestJson.newTitle, requestJson.newDesc, requestJson.newCatId, requestJson.newGenre);
+        const result = await projectsModel.updateProject(requestJson.id, requestJson.newTitle, requestJson.newDesc, requestJson.newTag);
         if(result.acknowledged) {
             logger.info("Project controller | Attempt to update project [" + requestJson.id + "] to name ["+requestJson.newTitle+"] with description [" + requestJson.newDesc + "] was successful!");
             response.status(200);

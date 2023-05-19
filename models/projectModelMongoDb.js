@@ -125,15 +125,15 @@ async function getAllProjectsByUser(userId) {
  * @throws {DatabaseError} if there was an issue writing to the database. Generally should not happen
  * @throws {InvalidInputError} if an invalid parameter was passed in
  */
-async function addProject(id, title, desc, catId, genre, userId) {
-    if (!validateUtils.isAddProjectValid(id, title, desc, catId, genre, userId)) {
+async function addProject(id, title, desc, tag, userId) {
+    if (!validateUtils.isAddProjectValid(id, title, desc, tag, userId)) {
         logger.error("Add project error: project with title " + title + " was not valid!");
         throw new InvalidInputError("Add project error: project with title " + title + " was not valid!");
     }
     else {
         try {
 
-            let result = (await getProjectCollection().insertOne({ id: id, title: title, description: desc, categoryId: catId, genre: genre, userId: userId }));
+            let result = (await getProjectCollection().insertOne({ id: id, title: title, description: desc, tag: tag, userId: userId }));
 
             if (result.acknowledged) {
                 logger.info("Add project: Successfully added " + title);
@@ -203,18 +203,18 @@ async function getSingleProjectById(id) {
  * or if the id parameter is empty
  * @throws {DatabaseError} If there was an issue updating the database
  */
-async function updateProject(id, newTitle, newDesc, newCatId, newGenre) {
+async function updateProject(id, newTitle, newDesc, newTag) {
     if (id < 0) {
         logger.error("Update project error: id can't be less than 0!");
         throw new InvalidInputError("Update project error: id can't be less than 0!");
-    } else if (!validateUtils.isUpdateProjectValid(id, newTitle, newDesc, newCatId, newGenre)) {
+    } else if (!validateUtils.isUpdateProjectValid(id, newTitle, newDesc, newTag)) {
         logger.error("Update project error: one of the inputs was not valid!");
         throw new InvalidInputError("Update project error: one of the inputs was not valid!");
     }
     else {
         try {
 
-            let checkExists = await getProjectCollection().updateOne({ id: id }, { $set: { id: id, title: newTitle, description: newDesc, categoryId: newCatId, genre: newGenre } });
+            let checkExists = await getProjectCollection().updateOne({ id: id }, { $set: { id: id, title: newTitle, description: newDesc, tag: newTag } });
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update project: Successfully updated project with id: " + id);
                 return checkExists;

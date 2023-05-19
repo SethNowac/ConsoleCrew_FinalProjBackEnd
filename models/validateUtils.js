@@ -7,15 +7,15 @@ function isTagValid(id, name) {
     return true;
 }
 
-function isAddProjectValid(id, title, desc, catId, genre, userId) {
-    if(id < 0 || !title || !desc || catId < 0 || genre < 0 || userId < 0) {
+function isAddProjectValid(id, title, desc, tag, userId) {
+    if(id < 0 || !title || !desc || !tag || userId < 0) {
         return false;
     }
     return true;
 }
 
-function isUpdateProjectValid(id, newTitle, newDesc, newCatId, newGenre) {
-    if(id < 0 || !newTitle || !newDesc || newCatId < 0 || newGenre < 0) {
+function isUpdateProjectValid(id, newTitle, newDesc, newTag) {
+    if(id < 0 || !newTitle || !newDesc || !newTag) {
         return false;
     }
     return true;
