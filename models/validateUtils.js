@@ -50,7 +50,7 @@ function isAddTasklogValid(id, issue, projectId) {
 }
 
 function isUpdateTasklogValid(id, issue, isResolved) {
-    if(id < 0 || !issue || !isResolved) {
+    if(id < 0 || !issue) {
         return false;
     }
     return true;

@@ -60,23 +60,61 @@ async function handleAddTasklog(request, response) {
  * @param {string} request parameter of name of the tasklog to get
  * @param {string} response result on whether or not the tasklog was successfully retrieved
  */
-router.get('/:id', handleGetSingleTasklog);
-async function handleGetSingleTasklog(request, response) {
+// router.get('/:id', handleGetSingleTasklog);
+// async function handleGetSingleTasklog(request, response) {
+//     try {
+//         let tasklogsObject = (await tasklogsModel.getSingleTasklogById(request.params.id));
+//         if(tasklogsObject != null) {
+//             logger.info("Tasklog controller | Tasklog ["+tasklogsObject.id+"] was retrieved successfully!");
+//             response.status(200);
+//             response.send(tasklogsObject);
+//         }
+//         else {
+//             logger.error("Tasklog controller | Failed to retrieve tasklog ["+request.params.id+"]");
+//             response.status(400);
+//             response.send("Tasklog controller | Failed to retrieve tasklog ["+request.params.id+"]");
+//         }
+//     }
+//     catch(err) {
+//         logger.error("Tasklog controller | Failed to get a single tasklog: " + err.message)
+//         if(err instanceof DatabaseError) {
+//             response.status(500);
+//             response.send({errorMessage: "There was a system error: " + err.message});
+//         }
+//         else if(err instanceof InvalidInputError) {
+//             response.status(400);
+//             response.send({errorMessage: "There was a validation error: " + err.message});
+//         }
+//         else {
+//             response.status(500);
+//             response.send({errorMessage: "There was an unexpected error: " + err.message});
+//         }
+//     }
+// }
+
+/**
+ * Validates reading an existing project in the database with url parameters and sends a response back to the server
+ * on whether it succeeded or failed
+ * @param {string} request parameter of name of the project to get
+ * @param {string} response result on whether or not the project was successfully retrieved
+ */
+router.get('/:projectId', handleGetTasksByProjectId);
+async function handleGetTasksByProjectId(request, response) {
     try {
-        let tasklogsObject = (await tasklogsModel.getSingleTasklogById(request.params.id));
+        let tasklogsObject = (await tasklogsModel.getAllTasksByProject(parseInt(request.params.projectId)));
         if(tasklogsObject != null) {
-            logger.info("Tasklog controller | Tasklog ["+tasklogsObject.id+"] was retrieved successfully!");
+            logger.info("Tasklog controller | Tasklogs were retrieved successfully!");
             response.status(200);
             response.send(tasklogsObject);
         }
         else {
-            logger.error("Tasklog controller | Failed to retrieve tasklog ["+request.params.id+"]");
+            logger.error("Tasklogs controller | Failed to retrieve tasklogs");
             response.status(400);
-            response.send("Tasklog controller | Failed to retrieve tasklog ["+request.params.id+"]");
+            response.send("Tasklog controller | Failed to retrieve tasklogs");
         }
     }
     catch(err) {
-        logger.error("Tasklog controller | Failed to get a single tasklog: " + err.message)
+        logger.error("Tasklog controller | Failed to get tasklogs: " + err.message)
         if(err instanceof DatabaseError) {
             response.status(500);
             response.send({errorMessage: "There was a system error: " + err.message});
@@ -176,8 +214,8 @@ async function handleUpdateTasklog(request, response) {
  router.delete('/:id', handleDeleteTasklog);
  async function handleDeleteTasklog(request, response) {
     try{
-        const deletedItem = await tasklogsModel.getSingleTasklogById(request.params.id);
-        const result = await tasklogsModel.deleteTasklog(request.params.id);
+        const deletedItem = await tasklogsModel.getSingleTasklogById(parseInt(request.params.id));
+        const result = await tasklogsModel.deleteTasklog(parseInt(request.params.id));
         if(result) {
             logger.info("Tasklog controller | Attempt to delete tasklog " + request.params.id + " was successful!");
             response.status(200);

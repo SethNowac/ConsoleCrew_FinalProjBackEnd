@@ -86,6 +86,34 @@ async function getAllTasklogs() {
 }
 
 /**
+ * Gets a list of all data within the project collection of the database by the userId
+ * @returns An array with the list of items in the collection
+ * @throws {DatabaseError} If the database could not be read from or if there is nothing in the database
+ */
+async function getAllTasksByProject(projectId) {
+    try {
+        if(projectId < 0){
+            logger.error("Get notes error: id must not be less than 0.");
+            throw new InvalidInputError("Get notes error: id must not be less than 0.");
+        }
+        let resultArray;
+        result = await getTasklogCollection().find({projectId: projectId});
+        resultArray = await result.toArray();
+        logger.info("Get all tasks by project model: successfully retrieved all tasks")
+        return resultArray;
+    }
+    catch (err) {
+        logger.error("Get all tasks by project model error: " + err.message);
+        if (err instanceof InvalidInputError) {
+            throw new InvalidInputError(err.message);
+        }
+        else {
+            throw new DatabaseError("Get all tasks by project model error: " + err.message);
+        }
+    }
+}
+
+/**
  * Adds a new tasklog model item to the tasklog model collection with a name and password
  * @param {integer} id Id of the tasklog to add
  * @param {string} issue Issue of the tasklog to add
@@ -173,8 +201,8 @@ async function updateTasklog(id, newIssue, isResolved, newNotes) {
         logger.error("Update tasklog model error: id must not be less than 0!");
         throw new InvalidInputError("Update tasklog model error: id must not be less than 0!");
     } else if (!validateUtils.isUpdateTasklogValid(id, newIssue, isResolved)) {
-        logger.error("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
-        throw new InvalidInputError("Update tasklog model error: newName " + newName + " or newDescription " + newPassword + " was not valid!");
+        logger.error("Update tasklog model error: newIssue " + newIssue + " was not valid!");
+        throw new InvalidInputError("Update tasklog model error: newIssue " + newIssue + " was not valid!");
     }
     else {
         try {
@@ -216,7 +244,7 @@ async function deleteTasklog(id) {
         let checkExists = null;
         try {
            
-            checkExists = await getTasklogSingle(id);
+            checkExists = await getSingleTasklogById(id);
             let result = (await getTasklogCollection().deleteOne({ id: id }));
             if (result.deletedCount > 0) {
                 logger.info("Delete tasklog model: Successfully deleted " + id);
@@ -257,4 +285,4 @@ function getClient() {
     return client;
 }
 
-module.exports = { getClient, initialize, addTasklog, getAllTasklogs, close, getTasklogCollection, updateTasklog, deleteTasklog, getSingleTasklogById }
+module.exports = { getClient, initialize, addTasklog, getAllTasklogs, close, getTasklogCollection, updateTasklog, deleteTasklog, getSingleTasklogById, getAllTasksByProject }
