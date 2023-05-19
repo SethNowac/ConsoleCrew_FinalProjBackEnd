@@ -214,8 +214,8 @@ async function handleUpdateProject(request, response) {
  router.delete('/:id', handleDeleteProject);
  async function handleDeleteProject(request, response) {
     try{
-        const deletedItem = await projectsModel.getSingleProjectById(request.params.id);
-        const result = await projectsModel.deleteProject(request.params.id);
+        const deletedItem = await projectsModel.getSingleProjectById(parseInt(request.params.id));
+        const result = await projectsModel.deleteProject(parseInt(request.params.id));
         if(result) {
             logger.info("Project controller | Attempt to delete project " + request.params.id + " was successful!");
             response.status(200);
