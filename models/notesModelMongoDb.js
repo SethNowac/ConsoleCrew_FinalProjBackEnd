@@ -27,20 +27,17 @@ async function initialize(databaseName, reset, url) {
         logger.info("Connected to MongoDb");
         db = client.db(databaseName);
 
-        // Check to see if the collections exists for note
-        notesCollectionCursor = await db.listCollections({ name: collectionName });
-        notesCollectionArray = await notesCollectionCursor.toArray();
-        if (notesCollectionArray.length == 0) {
-            // collation specifying case-insensitive collection
-            const collation = { locale: "en", strength: 1 };
-            // No match was found, so create new collection
-            await db.createCollection(collectionName, { collation: collation });
-        }
-        notesCollection = db.collection(collectionName); // convenient access to collection
+        collectionCursor = await db.listCollections({name: databaseName});
+        collectionArray = await collectionCursor.toArray();
 
-        if (reset) {
-            await notesCollection.drop();
+        if(reset && collectionArray.length > 0){
+            await db.collection(databaseName).drop();
         }
+        if(reset || collectionArray.length == 0){
+            const collation = {locale: "en", strength: 1};
+            await db.createCollection(databaseName, {collation: collation});
+        }
+        notesCollection = db.collection(databaseName);
 
     } catch (err) {
         logger.error("Initialize error: " + err.message);
@@ -74,7 +71,10 @@ async function getAllNotesByProject(projectId) {
             throw new InvalidInputError("Get notes error: project id cannot be less than 0.");
         }
 
-        result = await getNotesCollection().find({ projectId: projectId });
+        result = await notesCollection.find();
+
+        result = await result.toArray();
+        result = result.filter(note => note.projectId == projectId);
 
         if(!result){
             logger.error("Get notes error: Notes contained by project matching id: "+ projectId +" do not exist.");
@@ -110,7 +110,10 @@ async function getSingleNoteById(projectId, id) {
             throw new InvalidInputError("Get note error: cannot pass empty parameters.");
         }
 
-        result = await getNotesCollection().findOne({projectId: projectId, id:id});
+        result = await notesCollection.findOne({$and: [
+            {id: id},
+            {projectId: projectId}
+        ]});
 
         if(result == null){
             logger.error("Get note error: Note matching id: "+ id + " and projectId: "+ projectId + " does not exist.");
@@ -141,14 +144,14 @@ async function getSingleNoteById(projectId, id) {
  * @throws {InvalidInputError} Thrown if projectId or id is empty or if note data was not valid.
  * @returns The newly created note.
  */
-async function addNote(projectid, id, title, note) {
+async function addNote(projectId, id, title, note) {
     try {
-        if(!await validateNotes.isValid(projectid, id, title, note)) {
+        if(!await validateNotes.isValid(projectId, id, title, note)) {
             logger.error("Add note error: Project didn't exist or note contained empty data.");
             throw new InvalidInputError("Add note error: Project didn't exist or note contained empty data.");
         }
         else {
-            let result = (await getNotesCollection().insertOne({ projectid: projectid, id: id, title: title, note: note }));
+            let result = (await notesCollection.insertOne({ projectId: projectId, id: id, title: title, note: note }));
     
             if (result.acknowledged) {
                 logger.info("Add note: Successfully added note with title: " + title);
@@ -159,21 +162,21 @@ async function addNote(projectid, id, title, note) {
             }
         }
     } catch (err) {
-        logger.error("Get single note model error: " + err.message);
+        logger.error("Add note model error: " + err.message);
         if (err instanceof InvalidInputError) {
             throw new InvalidInputError(err.message);
         }
         else {
-            throw new DatabaseError("Get single note error: " + err.message);
+            throw new DatabaseError("Add note error: " + err.message);
         }
     }
 }
 
 /**
  * Updates all data of first note matching a projectId and Id.
- * @param {*} oldProjectId The project id of the note to udapte. Error thrown if empty.
+ * @param {*} projectId The project id of the note to udapte. Error thrown if empty.
  * @param {*} newProjectId The new project id the note. Error thrown if empty.
- * @param {*} oldId The id matching the note to update. Error thrown if empty.
+ * @param {*} id The id matching the note to update. Error thrown if empty.
  * @param {*} newId The new id of the note. Error thrown if empty.
  * @param {*} title The new title of the note. Error thrown if invalid.
  * @param {*} note The new contents of the note. Eror thrown if invalid.
@@ -181,9 +184,9 @@ async function addNote(projectid, id, title, note) {
  * @throws {InvalidInputError} Thrown if any id is empty, project does not exist or new note data is invalid.
  * @returns The update note if process was sucessful.
  */
-async function updateNote(oldProjectId, newProjectId, oldId, newId, title, note) {
+async function updateNote(projectId, newProjectId, id, newId, title, note) {
     try {
-        if (!oldProjectId || !newProjectId || !oldId || !newId) {
+        if (!projectId || !newProjectId || !id || !newId) {
             logger.error("Update note error: cannot pass an empty id parameter.");
             throw new InvalidInputError("Update note error: cannot pass an empty id parameter.");
         }
@@ -192,7 +195,12 @@ async function updateNote(oldProjectId, newProjectId, oldId, newId, title, note)
             throw new InvalidInputError("Update note error: Project didn't exist or note data was invalid.");
         }
         else {
-            let checkExists = await getNotesCollection().updateOne({ id: oldId, projectId: oldProjectId }, { $set: { projectId: newProjectId, id: newId, title: title, note: note } });
+            let checkExists = await notesCollection.updateOne({$and: [
+                {id: id},
+                {projectId: projectId}
+            ]}, 
+            { $set: { projectId: newProjectId, id: newId, title: title, note: note } });
+
             if (checkExists.modifiedCount > 0) {
                 logger.info("Update note: Successfully updated note with id: " + id);
                 return checkExists;
@@ -231,7 +239,11 @@ async function deleteNote(projectId, id) {
             throw new InvalidInputError("Delete note error: note matching "+id+" could not be found.");
         }
         else {
-            let result = (await getNotesCollection().deleteOne({ id: id, projectId: projectId }));
+            let result = (await notesCollection.deleteOne({$and: [
+                {id: id},
+                {projectId: projectId}
+            ]}));
+
             if (result.deletedCount > 0) {
                 logger.info("Delete note: Successfully deleted note matching id:" + id);
                 return true;

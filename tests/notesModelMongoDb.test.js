@@ -27,7 +27,7 @@ beforeEach(async () => {
         await notesModel.initialize(notesDb, true, notesUri);
         await projectModel.initialize(projectDb, true, projectUri);
 
-        await projectModel.addProject(1, "testProject", "testing project", 1, 1, 1);
+        await projectModel.addProject(1, "testProject", "testing project", "testTag", 1);
 
     } catch (error) {
         console.log("Error: "+error.message);
@@ -57,6 +57,7 @@ test("Add Note Success", async () => {
     expect(results[0].id).toBe(1);
     expect(results[0].title).toBe("firstNote");
     expect(results[0].note).toBe("firstNote Desc");
+    expect(results[0].projectId).toBe(1);
 });
 
 test("Add Note Failure", async () => {
@@ -72,18 +73,18 @@ test("Add Note Failure", async () => {
 });
 
 test("Get All Notes By Project Success", async () => {
-    await projectModel.addProject(1, "project", "description", 0, 0, 0);
+    await notesModel.addNote(1, 1, "firstNote", "firstNoteDesc");
+    await notesModel.addNote(1, 2, "secondNote", "secondNoteDesc");
 
-    await notesModel.addNote(1, 1, "firstNote", "firstNote Desc");
-    await notesModel.addNote(1, 2, "secondNote", "secondNote Desc");
+    const resultArray = await notesModel.getAllNotesByProject(1);
 
-    let result = await notesModel.getAllNotesByProject(1);
-
-    expect(result != null).toBe(true);
+    expect(resultArray != null).toBe(true);
+    expect(resultArray.length).toBe(2);
 });
 
 test("Get All Notes By Project Failure", async () => {
-    await expect(() => notesModel.getAllNotesByProject()).rejects.toThrow();
+    let result = await notesModel.getAllNotesByProject(10000);
+    expect(result).toStrictEqual([]);
 });
 
 test("Get Single Note By Project Success", async () => {
@@ -91,6 +92,7 @@ test("Get Single Note By Project Success", async () => {
     let result = await notesModel.getSingleNoteById(1,1);
 
     expect(result != null).toBe(true);
+    expect(result.title).toBe("firstNote");
 });
 
 test("Get Single Note By Project Failure", async () => {
@@ -122,13 +124,9 @@ test("Delete Note Success", async () => {
     const cursor = await coll.find();
     const results = await cursor.toArray();
 
-    let initialSize = results.length;
-
     let result = await notesModel.deleteNote(1,1);
 
-    let sizeAfter = results.length;
-
-    expect(initialSize-1).toBe(sizeAfter);
+    expect(result).toBe(true);
 });
 
 test("Delete Note Failure", async () => {
