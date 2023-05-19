@@ -15,7 +15,6 @@ let client;
 let projectCollection;
 
 const logger = require("../logger");
-const { authenticateUser, refreshSession } = require("../controllers/sessionController");
 
 /**
  * Connect up to the online MongoDb database with the name stored in dbName

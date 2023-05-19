@@ -14,6 +14,8 @@ const { InvalidInputError } = require("../models/InvalidInputErrors");
 const projectsModel = require("../models/projectModelMongoDb");
 let requestJson;
 
+const { authenticateUser, refreshSession } = require("../controllers/sessionController");
+
 /**
  * Validates creating a new project and adds it to the database. Input is processed with body parameters. Sends a response back to the server
  * on whether it succeeded or failed
@@ -24,15 +26,6 @@ router.post('/', handleAddProject);
 async function handleAddProject(request, response) {
     requestJson = request.body;
     try {
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for add project");
-
-        refreshSession(request, response);
-
         const added = await projectsModel.addProject(requestJson.id, requestJson.title, requestJson.desc, requestJson.tag, requestJson.userId);
         if(added.acknowledged) {
             logger.info("Project ["+requestJson.title+"] of description ["+requestJson.desc+"] was added successfully!");
@@ -110,15 +103,6 @@ async function handleAddProject(request, response) {
 router.get('/:userId', handleGetProjectsByUserId);
 async function handleGetProjectsByUserId(request, response) {
     try {
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get project by user id");
-
-        refreshSession(request, response);
-        
         let projectsObject = (await projectsModel.getAllProjectsByUser(parseInt(request.params.userId)));
         if(projectsObject != null) {
             logger.info("Project controller | Projects were retrieved successfully!");
@@ -157,15 +141,6 @@ async function handleGetProjectsByUserId(request, response) {
 router.get('/', handleGetAllProjects);
 async function handleGetAllProjects(request, response) {
     try {
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all project");
-
-        refreshSession(request, response);
-        
         let projectsObject = (await projectsModel.getAllProjects());
         if(projectsObject != null) {
             logger.info("Project controller | Retrieved successfully!");
@@ -201,15 +176,6 @@ router.put('/', handleUpdateProject);
 async function handleUpdateProject(request, response) {
     requestJson = request.body;
     try{
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for update project");
-
-        refreshSession(request, response);
-        
         const result = await projectsModel.updateProject(requestJson.id, requestJson.newTitle, requestJson.newDesc, requestJson.newTag);
         if(result.acknowledged) {
             logger.info("Project controller | Attempt to update project [" + requestJson.id + "] to name ["+requestJson.newTitle+"] with description [" + requestJson.newDesc + "] was successful!");
@@ -250,15 +216,6 @@ async function handleUpdateProject(request, response) {
  router.delete('/:id', handleDeleteProject);
  async function handleDeleteProject(request, response) {
     try{
-        const authenticatedSession = authenticateUser(request);
-        if (!authenticatedSession) {
-            response.sendStatus(401); // Unauthorized access
-            return;
-        }
-        logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete project");
-
-        refreshSession(request, response);
-        
         const deletedItem = await projectsModel.getSingleProjectById(parseInt(request.params.id));
         const result = await projectsModel.deleteProject(parseInt(request.params.id));
         if(result) {
