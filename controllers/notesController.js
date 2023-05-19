@@ -18,6 +18,14 @@ let requestJson;
 router.get('/:id/notes/:noteId', handleGetSingleNote);
 async function handleGetSingleNote(request, response){  
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get note");
+
+        refreshSession(request, response);
         const foundNote = await notesModel.getSingleNoteById(request.params.id, request.params.noteId);
         if(foundNote.acknowledged){
             logger.info("Note controller, note found successfully");
@@ -51,6 +59,14 @@ async function handleGetSingleNote(request, response){
 router.get('/:id/notes', handleGetAllNotesByProject);
 async function handleGetAllNotesByProject(request, response){
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for get all notes by project");
+
+        refreshSession(request, response);
         const foundNotes = await notesModel.getAllNotesByProject(request.params.id);
         if(foundNotes.acknowledged){
             logger.info("Note controller, notes found successfully");
@@ -85,6 +101,14 @@ router.post('/:id/notes', handleAddNote);
 async function handleAddNote(request, response) {
     requestJson = request.body;
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for add note");
+
+        refreshSession(request, response);
         const addedNote = await notesModel.addNote(request.params.id, requestJson.id, requestJson.title, requestJson.note);
         if(addedNote.acknowledged){
             logger.info("Note controller, note created successfully");
@@ -119,6 +143,14 @@ router.put('/:id/notes', handleUpdateNote);
 async function handleUpdateNote(request, response){
     requestJson = request.body;
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for update note");
+
+        refreshSession(request, response);
         const result = await notesModel.updateNote(request.params.id, requestJson.newProjectId, requestJson.oldId, requestJson.newId, requestJson.title, requestJson.note);
         if(result.acknowledged){
             logger.info("Note controller, note updated successfully.");
@@ -147,6 +179,14 @@ async function handleUpdateNote(request, response){
 router.delete('/:id/notes/:noteId', handleDeleteNote);
 async function handleDeleteNote(request, response){
     try {
+        const authenticatedSession = authenticateUser(request);
+        if (!authenticatedSession) {
+            response.sendStatus(401); // Unauthorized access
+            return;
+        }
+        logger.info("User " + authenticatedSession.userSession.username + " is authorized for delete note");
+
+        refreshSession(request, response);
         const deletedItem = await notesModel.getSingleNoteById(request.params.id, request.params.noteId);
         const result = await notesModel.deleteNote(request.params.id, request.params.noteId);
 
