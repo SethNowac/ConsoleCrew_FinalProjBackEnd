@@ -7250,3 +7250,4 @@
 {"level":50,"time":1684511880647,"pid":31688,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to delete tasklog: Get tasklog model error: id 2 was not found in database!"}
 {"level":50,"time":1684512569651,"pid":31688,"hostname":"DESKTOP-BBDALJM","msg":"Update tasklog model error: Update tasklog model error: id 1 was not found in database!"}
 {"level":50,"time":1684512569651,"pid":31688,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to update tasklog: Update tasklog model error: id 1 was not found in database!"}
+{"level":50,"time":1684514315964,"pid":31688,"hostname":"DESKTOP-BBDALJM","msg":"Unsuccessful login: Invalid username / password for user: sethnowac@gmail.com"}
