@@ -50,8 +50,8 @@ afterAll(async () => {
 ////////////////////////////////////
 // TESTS FOR ADD PROJECT //
 test('Can add Project Information to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await model.addProject(id, title, desc, catId, genre, userId)
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: 0};
+    await model.addProject(id, title, desc, tag, userId)
 
     const cursor = await model.getProjectCollection().find();
     const results = await cursor.toArray();
@@ -60,47 +60,42 @@ test('Can add Project Information to DB', async () => {
     expect(results[0].id == id).toBe(true);
     expect(results[0].title.toLowerCase() == title.toLowerCase()).toBe(true);
     expect(results[0].description.toLowerCase() == desc.toLowerCase()).toBe(true);
-    expect(results[0].categoryId == catId).toBe(true);
-    expect(results[0].genre == genre).toBe(true);
+    expect(results[0].tag == tag).toBe(true);
     expect(results[0].userId == userId).toBe(true);
 });
 
 test('Cannot add project with negative id parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:-1, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
+    const { id, title, desc, tag, userId } = {id:-1, title: "project", desc: "description", tag: "test", userId: 0};
+    await expect(() => model.addProject(id, title, desc, tag, userId)).rejects.toThrow();
 });
 
 test('Cannot add project with empty title parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "", desc: "description", catId: 0, genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
+    const { id, title, desc, tag, userId } = {id:0, title: "", desc: "description", tag: "test", userId: 0};
+    await expect(() => model.addProject(id, title, desc, tag, userId)).rejects.toThrow();
 });
 
 test('Cannot add project with empty description parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "", catId: 0, genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "", tag: "test", userId: 0};
+    await expect(() => model.addProject(id, title, desc, tag, userId)).rejects.toThrow();
 });
 
-test('Cannot add project with negative id parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: -1, genre: 0, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
+test('Cannot add project with negative user id parameter to DB', async () => {
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: -1};
+    await expect(() => model.addProject(id, title, desc, tag, userId)).rejects.toThrow();
 });
 
-test('Cannot add project with negative genre parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: -1, userId: 0};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
+test('Cannot add project with empty tag parameter to DB', async () => {
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "", userId: 0};
+    await expect(() => model.addProject(id, title, desc, tag, userId)).rejects.toThrow();
 });
 
-test('Cannot add project with negative user ID parameter to DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: -1};
-    await expect(() => model.addProject(id, title, desc, catId, genre, userId)).rejects.toThrow();
-});
 
 
 ////////////////////////////
 // TESTS FOR READ PROJECT //
 test('Can read Project from DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await model.addProject(id, title, desc, catId, genre, userId)
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: 0};
+    await model.addProject(id, title, desc, tag, userId)
     const cursor = await model.getProjectCollection().find();
     const results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
@@ -110,8 +105,7 @@ test('Can read Project from DB', async () => {
     expect(product.id == id).toBe(true);
     expect(product.title.toLowerCase() == title.toLowerCase()).toBe(true);
     expect(product.description.toLowerCase() == desc.toLowerCase()).toBe(true);
-    expect(product.categoryId == catId).toBe(true);
-    expect(product.genre == genre).toBe(true);
+    expect(product.tag == tag).toBe(true);
     expect(product.userId == userId).toBe(true);
 });
 
@@ -130,8 +124,8 @@ test('Reading all Project should throw error if empty', async () => {
 });
 
 test('Reading all Project should return a list of items from DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await model.addProject(id, title, desc, catId, genre, userId)
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: 0};
+    await model.addProject(id, title, desc, tag, userId);
 
     const cursor = await model.getProjectCollection().find();
     const results = await cursor.toArray();
@@ -145,11 +139,11 @@ test('Reading all Project should return a list of items from DB', async () => {
 //////////////////////////////
 // TESTS FOR UPDATE PROJECT //
 test('Can update Project from DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    const { newTitle, newDesc, newCatId, newGenre } = {newTitle: "updated project", newDesc: "updated description", newCatId: 1, newGenre: 1};
-    await model.addProject(id, title, desc, catId, genre, userId)
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: 0};
+    const { newTitle, newDesc, newTag } = {newTitle: "updated project", newDesc: "updated description", newTag: "newTest"};
+    await model.addProject(id, title, desc, tag, userId)
 
-    const product = await model.updateProject(id, newTitle, newDesc, newCatId, newGenre);
+    await model.updateProject(id, newTitle, newDesc, newTag);
 
     const cursor = await model.getProjectCollection().find();
     const results = await cursor.toArray();
@@ -157,8 +151,7 @@ test('Can update Project from DB', async () => {
 
     expect(results[0].title.toLowerCase() == newTitle.toLowerCase()).toBe(true);
     expect(results[0].description.toLowerCase() == newDesc.toLowerCase()).toBe(true);
-    expect(results[0].categoryId == newCatId).toBe(true);
-    expect(results[0].genre == newGenre).toBe(true);
+    expect(results[0].tag.toLowerCase()).toBe(newTag.toLowerCase());
 });
 
 test('Cannot update Project with an empty id parameter', async () => {
@@ -213,8 +206,8 @@ test('Cannot update Project with a negative new genre id parameter', async () =>
 //////////////////////////////
 // TESTS FOR DELETE PROJECT //
 test('Can delete Project Information from DB', async () => {
-    const { id, title, desc, catId, genre, userId } = {id:0, title: "project", desc: "description", catId: 0, genre: 0, userId: 0};
-    await model.addProject(id, title, desc, catId, genre, userId)
+    const { id, title, desc, tag, userId } = {id:0, title: "project", desc: "description", tag: "test", userId: 0};
+    await model.addProject(id, title, desc, tag, userId)
     let cursor = await model.getProjectCollection().find();
     let results = await cursor.toArray();
     expect(Array.isArray(results)).toBe(true);
