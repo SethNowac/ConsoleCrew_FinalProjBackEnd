@@ -16,7 +16,7 @@ const cors = require("cors");
 const controllers = ['homeController', 'categoryController', 'notesController', 'projectController', 'sessionController',
     'storyboardController', 'tagsController', 'tasklogController', 'userController', 'errorController']
 
-app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
+app.use(cors({credentials: true, origin: process.env.FRONT_END}));
 
 app.use(express.json());
 
