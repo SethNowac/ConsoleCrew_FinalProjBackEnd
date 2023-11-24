@@ -216,12 +216,7 @@ async function registerUser(request, response) {
         const username = request.body.username;
         const password = request.body.password;
 
-        if(username && password && validator.isStrongPassword(password, {
-            minLength: 8,
-            minUppercase: 1,
-            minNumbers: 1,
-            minSymbols: 0,
-          })) {
+        if(username && password) {
             try {
                 const userExists = await usersModel.getSingleUserByName(username);
                 logger.error("Invalid registration - username "+username+" already exists!");

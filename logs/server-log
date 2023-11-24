@@ -7322,3 +7322,57 @@
 {"level":50,"time":1684519753910,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684519753911,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
 {"level":50,"time":1684519753911,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Project controller | Failed to get all projects: Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684520700569,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684520700570,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1684520700570,"pid":30536,"hostname":"DESKTOP-BBDALJM","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699726274407,"pid":17920,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726438523,"pid":11696,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726438523,"pid":11696,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726438523,"pid":11696,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726438523,"pid":11696,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726438523,"pid":11696,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726450989,"pid":7872,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726450990,"pid":7872,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726450990,"pid":7872,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726497335,"pid":18828,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726549216,"pid":19116,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726549218,"pid":19116,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726549219,"pid":19116,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726564247,"pid":5084,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726605735,"pid":11932,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726605735,"pid":11932,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699726605735,"pid":11932,"hostname":"DESKTOP-UFAMCHF","msg":"Initialize error: querySrv ENOTFOUND _mongodb._tcp.cluster0.wmwkw0n.mongodb.net"}
+{"level":50,"time":1699728880645,"pid":15588,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699728880645,"pid":15588,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699728880646,"pid":15588,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful login: Invalid username / password for user: skuddyseth@gmail.com"}
+{"level":50,"time":1699728948722,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699728948723,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699728948723,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful login: Invalid username / password for user: skuddyseth@gmail.com"}
+{"level":50,"time":1699729002931,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699729002931,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699729002931,"pid":16608,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful login: Invalid username / password for user: skuddyseth@gmail.com"}
+{"level":50,"time":1699729210524,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699729642940,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699729899014,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699730268598,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699730304985,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699730346605,"pid":8564,"hostname":"DESKTOP-UFAMCHF","msg":"Unsuccessful registration: Empty username or password!"}
+{"level":50,"time":1699730391278,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1699730391279,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1699730403205,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1699730410696,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Error with connection to database: Unable to register collection!"}
+{"level":50,"time":1699730444477,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699730444477,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id skuddyseth@gmail.com was not found in database!"}
+{"level":50,"time":1699730542995,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730542995,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730542995,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Project controller | Failed to get all projects: Get all projects model error: Get all projects model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730606580,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730606580,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730606580,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Tasklog controller | Failed to get all tasklogs: Get all tasklogs model error: Get all tasklogs model error: There is currently nothing in the database to read!"}
+{"level":50,"time":1699730758229,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1699730758229,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1699730758239,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get user model error: name sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1699730758239,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get single user model error: Get user model error: id sethnowac@gmail.com was not found in database!"}
+{"level":50,"time":1699730838540,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get tasklog model error: id 2 was not found in database!"}
+{"level":50,"time":1699730838540,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Get single tasklog model error: Get tasklog model error: id 2 was not found in database!"}
+{"level":50,"time":1699730838540,"pid":13228,"hostname":"DESKTOP-UFAMCHF","msg":"Tasklog controller | Failed to delete tasklog: Get tasklog model error: id 2 was not found in database!"}
